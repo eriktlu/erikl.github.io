@@ -608,8 +608,7 @@ SERVICES
 }
 
 .text-light {
-  filter: invert(99%) sepia(19%) saturate(0%) hue-rotate(207deg)
-    brightness(380%) contrast(100%);
+  background-image: url(../icons/next_arrow_light.svg);
 }
 
 .index-scrollable-brands ul {
