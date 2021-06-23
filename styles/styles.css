@@ -488,6 +488,7 @@ BANNER/SLIDESHOW
 .index-slide-img {
   display: block;
   height: 540px;
+  max-height: 540px;
   width: 100%;
   object-fit: cover;
 }
@@ -2648,6 +2649,7 @@ MAP - CONTACT
 
     .index-slide-img {
       height: 300px !important;
+      max-height: 300px;
     }
 
     .index-banner-container h1 {
