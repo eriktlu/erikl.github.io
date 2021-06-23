@@ -269,6 +269,7 @@ ul.breadcrumbs li + li:before {
 
 .main-header {
   background-color: var(--secondary-color);
+  min-height: 50px;
 }
 
 .header-container {
@@ -311,7 +312,7 @@ HEADER ICONS
 }
 
 .main-navigation {
-  height: 100px;
+  min-height: 100px;
   position: relative;
 }
 
@@ -414,6 +415,7 @@ footer {
   color: var(--font-color-light);
   display: flex;
   flex-direction: column;
+  min-height: fit-content;
 }
 
 .footer-mobile {
