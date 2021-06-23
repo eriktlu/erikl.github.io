@@ -2368,6 +2368,7 @@ MAP - CONTACT
 @media only screen and (max-width: 899px) {
   .main-navigation {
     height: 60px !important;
+    min-height: 60px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   }
 }
