@@ -280,6 +280,7 @@ ul.breadcrumbs li + li:before {
   padding-right: 30px;
   padding-left: 10px;
   color: var(--font-color-light);
+  white-space: nowrap;
 }
 
 .header-info-opening {
