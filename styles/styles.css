@@ -806,6 +806,7 @@ INDEX PROCEDURE
 
 .procedure-group-infograph img {
   width: 85%;
+  height: 100%;
 }
 
 .procedure-group-down {
@@ -855,7 +856,6 @@ INDEX CONTACT
 .index-contact-container {
   position: absolute;
   left: 10%;
-  height: 0px;
   top: 35%;
   width: 0;
 }
@@ -867,6 +867,7 @@ INDEX CONTACT
   text-align: center;
   width: 250px;
   border-radius: 2%;
+  height: 240px;
 }
 
 .index-contact-card h4 {
