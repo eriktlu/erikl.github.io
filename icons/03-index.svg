@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Ellipse-1-copy-2" serif:id="Ellipse 1 copy 2" transform="matrix(1,0,0,1,-30,-2287)">
+        <circle cx="59.297" cy="2316.3" r="29.297" style="fill:rgb(0,131,221);"/>
+        <clipPath id="_clip1">
+            <circle cx="59.297" cy="2316.3" r="29.297"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g id="_03" serif:id="03" transform="matrix(1,0,0,1,59.1592,2327.42)">
+                <text x="-18.675px" y="0px" style="font-family:'Montserrat-SemiBold', 'Montserrat';font-weight:600;font-size:30px;fill:rgb(255,254,254);">0<tspan x="1.215px " y="0px ">3</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

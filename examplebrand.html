@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/styles.css" />
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+
+	<!-- SCRIPT TO STOP TRANSITIONS WHILE ADJUSTING WINDOW SIZE -->
+	<script src="js/stop-transition.js"></script>
+
+	<!-- SCRIPT NOT ALLOWING TO SCROLL WHEN MENU OPENED - MOBILE ONLY -->
+	<script src="js/dropDown.js"></script>
+
+	<title>Mobistekla</title>
+</head>
+
+<body>
+	<!-- HEADER AREA - ONLY SHOWN ON DESKTOPS -->
+	<header class="main-header flex-center flex">
+		<div class="header-container container container-l flex flex-between">
+			<section class="header-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</section>
+			<section class="header-info flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</section>
+		</div>
+	</header>
+
+	<!-- NAVIGATION -->
+	<nav class="main-navigation flex flex-center flex-v-center">
+		<div class="
+					nav-container
+					container container-m
+					flex flex-between flex-v-center
+				">
+			<input type="checkbox" class="mobile-nav-toggle" id="mobile-nav-toggle" onclick="dropDown()" />
+			<label for="mobile-nav-toggle" class="mobile-nav-toggle-label flex flex-v-center">
+				<span></span>
+			</label>
+
+			<section class="navigation-logo">
+				<a href="#" class="flex flex-center"><img src="images/Mobistekla-Logo.png" alt="Mobistekla Logo" /></a>
+			</section>
+
+			<section class="navigation-menu" id="navMobMenu" aria-expanded="false">
+				<ul class="flex flex-between">
+					<li><a href="#" class="nav-menu-link">DOMOV</a></li>
+					<li>
+						<a href="#" class="nav-menu-link">SERVIS</a>
+						<!-- MEGA DROPDOWN MENU - ONLY FOR DESKTOP -->
+						<div class="menu-sub container-m">
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPhone</h3>
+								<ul>
+									<li><a href="#">iPhone 12 Pro</a></li>
+									<li><a href="#">iPhone SE 2nd</a></li>
+									<li><a href="#">iPhone 11 Pro Max</a></li>
+									<li><a href="#">iPhone 11 Pro</a></li>
+									<li><a href="#">iPhone XR</a></li>
+									<li><a href="#">iPhone XS</a></li>
+									<li><a href="#">iPhone XS Max</a></li>
+									<li><a href="#">iPhone X</a></li>
+									<li><a href="#">iPhone 12 Mini</a></li>
+									<li><a href="#">iPhone 8 Plus</a></li>
+									<li><a href="#">iPhone 8</a></li>
+									<li><a href="#">iPhone 7 Plus</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPad</h3>
+								<ul>
+									<li><a href="#">iPad Air 3 (2019)</a></li>
+									<li><a href="#">iPad 8th Gen 10.2 (2020)</a></li>
+									<li><a href="#">iPad Pro 11 (2018)</a></li>
+									<li><a href="#">iPad 7th Gen 10.2 (2019)</a></li>
+									<li><a href="#">iPad Pro 12.9 (2018)</a></li>
+									<li><a href="#">iPad Air 6th Gen (2018)</a></li>
+									<li><a href="#">iPad Air 5th Gen (2017)</a></li>
+									<li><a href="#">iPad Mini 4</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+
+								<h3 class="menu-sub-heading">MacBook</h3>
+								<ul>
+									<li><a href="#">MacBook Air 13 Inch</a></li>
+									<li><a href="#">MacBook Air 11 Inch</a></li>
+									<li><a href="#">MacBook Pro Retina</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Samsung</h3>
+								<ul>
+									<li><a href="#">Samsung Galaxy S20</a></li>
+									<li><a href="#">Samsung Galaxy S20 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S20 Ultra</a></li>
+									<li><a href="#">Samsung Galaxy S10</a></li>
+									<li><a href="#">Samsung Galaxy S10 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S10 5G</a></li>
+									<li><a href="#">Samsung Galaxy S9 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S9</a></li>
+									<li><a href="#">Samsung Galaxy S8</a></li>
+									<li><a href="#">Samsung Galaxy S8 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S7</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Huawei</h3>
+								<ul>
+									<li><a href="#">Huawei Mate 20 Pro</a></li>
+									<li><a href="#">Huawei Mate 20 Lite</a></li>
+									<li><a href="#">Huawei Mate 20 X</a></li>
+									<li><a href="#">Huawei Mate 30</a></li>
+									<li><a href="#">Huawei Mate 30 Pro</a></li>
+									<li><a href="#">Huawei Mate 30E Pro</a></li>
+									<li><a href="#">Huawei Mate 30 RS</a></li>
+									<li><a href="#">Huawei MatePad Pro</a></li>
+									<li><a href="#">Huawei Mate Xs</a></li>
+									<li><a href="#">Huawei Mate 40</a></li>
+									<li><a href="#">Huawei Mate 40 Pro</a></li>
+									<li><a href="#">Huawei Mate 40 Pro+</a></li>
+									<li><a href="#">Huawei Mate 40 RS</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+						</div>
+					</li>
+					<li><a href="#" class="nav-menu-link">KONTAKT</a></li>
+					<li><a href="#" class="nav-menu-link">O NAS</a></li>
+					<li><a href="#" class="nav-menu-link">ZANIMIVO</a></li>
+					<li><a href="#" class="nav-menu-link">GALERIJA POPRAVIL</a></li>
+				</ul>
+
+				<!-- HAMBURGER MENU - ONLY FOR MOBILE -->
+				<article class="menu-mobile flex flex-column flex-v-center" id="menMob">
+					<h5>Delovni cas</h5>
+					<div class="menu-mobile-opening flex">
+						<p>
+							<span class="header-info-opening">PON - ČET</span> 9.00-18.00
+						</p>
+						<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+						<p>051 494 000 | 070 421 117</p>
+					</div>
+
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/maps-and-flags.svg" alt="Company phone number"
+							class="header-icons i-location" />
+						<p>Ljubljana, Tržaška cesta 5</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+						<p>info@mobistekla.si</p>
+					</div>
+
+					<div class="menu-mobile-socialmedia flex">
+						<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+						<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+								class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+					</div>
+				</article>
+
+			</section>
+
+			<!-- SEARCH BUTTON - MOBILE ONLY -->
+			<section class="mobile-search-button">
+				<input type="checkbox" class="mobile-search-toggle" id="mobile-search-toggle"/>
+				<label for="mobile-search-toggle" class="mobile-search-toggle-label flex flex-v-center">
+					<img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image" />
+				</label>
+				<div class="mobile-search-group flex">
+					<label for="mobile-search-toggle" class="mobile-search-toggle-label-close flex flex-center flex-v-center">
+						<img src="icons/close.svg" alt="Close Search" class="mobile-search-close">
+					</label>
+					<form action="/" class="mobile-search-form flex flex-center flex-v-center">
+						<div class="mobile-search-field flex flex-center">
+							<input type="search" name="mobile-search" id="mobile-search" placeholder="Iskanje">
+							<span class="mobile-search-submit-group flex"><button type="submit" class="mobile-search-submit"><img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image-small" /></button></span>
+						</div>
+					</form>
+				</div>
+
+				
+			</section>
+		</div>
+	</nav>
+
+	<!-- MAIN CONTENT -->
+	<main class="brand">
+
+		<!-- BANNER -->
+		<section class="banner main-content">
+			<div class="banner-container flex flex-center">
+				<img src="images/Service-brand-header.jpg" alt="Fixing broken phone" />
+				<div class="service-brands-container-banner container container-s flex flex-v-center flex-column">
+					<h1>PREGLED IN UGODEN SERVIS MOBILNIH NAPRAV</h1>
+					<form action="/" class="banner-search-container container flex flex-around">
+						<input type="text" placeholder="Vpišite model svojega telefona..."
+							class="banner-search input-outline" name="search" />
+						<button type="submit" class="banner-button">
+							<img src="icons/loupe.svg" alt="Search" class="search-icon" />
+						</button>
+					</form>
+				</div>
+			</div>
+			
+		</section>
+
+		<!-- BREADCRUMBS -->
+		<section class="page-breadcrumbs main-content">
+			<div class="container container-m">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs-item">
+						<a href="#" class="breadcrumbs-link">Servis</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="#" class="breadcrumbs-link breadcrumbs-active">Apple</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- HEADING AND TEXT -->
+		<section class="service-brands-header main-content section-freespace-bottom">
+			<div class="container container-s">
+				<article>
+					<header>
+						<h2>Apple</h2>
+					</header>
+
+					<p class="service-brand-info">Zaupajte vašo Apple napravo v zanesljive roke naših serviserjev.
+						Popravljamo različne Applove naprave – iPhone, iPad, iWatch, MacBook ... Naš spekter popravil
+						zajema skoraj vse – od preproste menjave baterije in menjave ekrana, do reševanja povsem
+						poškodovanih telefonov, za katere mnogi menijo, da jim ni več pomoči. Prav tako servisiramo
+						naprave, ki so bile v stiku s tekočino, pa tudi tiste, ki imajo težave s software-om.
+					</p>
+
+					<div class="flex flex-center">
+						<a href="#" class="service-brands-button">ZANIMA ME VEČ</a>
+					</div>
+
+				</article>
+			</div>
+		</section>
+
+		<!-- PRODUCTS -->
+		<section class="
+					service-brands-logos
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+			<div class="
+						service-brands-container
+						container container-m
+						flex flex-column flex-v-center
+					">
+
+				<!-- 
+					PRODUCTS 
+				
+					HOW TO ADD:
+				
+					<li class="b-logo">
+						<a href="[link]">
+							<div class="b-logo-img flex">
+								<img src="[imageSrc]" alt="[description]" />
+							</div>					
+							<p>[productName]</p>
+						</a>
+					</li>
+				-->
+				<ul class="service-brands-logos-group flex flex-wrap flex-center">
+					<li class="b-logo">
+						<a href="#">
+							<div class="b-logo-img flex">
+								<img src="images/iphone-up.png" alt="Bramd logo name" />
+							</div>					
+							<p>Iphone SE 2020</p>
+						</a>
+					</li>
+					<li class="b-logo">
+						<a href="#">
+							<div class="b-logo-img flex">
+								<img src="images/macbook.png" alt="Bramd logo name" />
+							</div>	
+							<p>Iphone 12</p>
+						</a>
+					</li>
+					<li class="b-logo">
+						<a href="#">
+							<div class="b-logo-img flex">
+								<img src="images/iphone-up-think.png" alt="Bramd logo name" />
+							</div>
+							<p>Apple MacBook Pro 12.6 Retina A1534</p>
+						</a>
+					</li>
+					<li class="b-logo">
+						<a href="#">
+							<div class="b-logo-img flex">
+								<img src="images/iphone-up.png" alt="Bramd logo name" />
+							</div>	
+							<p>Apple MacBook Air 13.3 M1 A2337</p>
+						</a>
+					</li>
+					<li class="b-logo">
+						<a href="#">
+							<div class="b-logo-img flex">
+								<img src="images/iphone-up.png" alt="Bramd logo name" />
+							</div>					
+							<p>Iphone SE 2020</p>
+						</a>
+					</li>
+					<li class="b-logo">
+						<a href="#">
+							<div class="b-logo-img flex">
+								<img src="images/macbook.png" alt="Bramd logo name" />
+							</div>	
+							<p>Iphone 12</p>
+						</a>
+					</li>
+					<li class="b-logo">
+						<a href="#">
+							<div class="b-logo-img flex">
+								<img src="images/iphone-up-think.png" alt="Bramd logo name" />
+							</div>
+							<p>Apple MacBook Pro 12.6 Retina A1534</p>
+						</a>
+					</li>
+					<li class="b-logo">
+						<a href="#">
+							<div class="b-logo-img flex">
+								<img src="images/iphone-up.png" alt="Bramd logo name" />
+							</div>	
+							<p>Apple MacBook Air 13.3 M1 A2337</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- BOTTOM TEXT -->
+		<section class="service-brands-bottom-info main-content section-freespace-bottom">
+			<div class="container container-m">
+				<article>
+					<p class="service-brands-bottom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus commodo ante non magna efficitur, sit amet varius purus feugiat. Sed feugiat vel velit
+						ac fermentum. Ut tempor placerat purus vitae rutrum. Etiam lorem metus, commodo eget eros vel,
+						placerat aliquam nisl. Aliquam metus eros, laoreet ut convallis ut, tempus ac turpis. Donec
+						molestie venenatis lectus congue varius. Vivamus sodales viverra metus, non sollicitudin orci.
+						Nam porta egestas ligula sed posuere.</p>
+
+					<p class="service-brands-bottom-text">Aenean nec metus ut mauris dignissim egestas id cursus enim.
+						Cras consequat nisi ut felis rhoncus iaculis. Nam at turpis sed libero lobortis fringilla eu
+						semper nisl. Maecenas ante mi, elementum eu fermentum non, tincidunt ut sem. Vestibulum augue
+						elit, pretium a orci ac, feugiat placerat ante. Duis id porttitor est. Mauris magna tortor,
+						vulputate ut nunc sed, porta dictum ipsum. Maecenas et elit porttitor, placerat libero non,
+						dictum sapien. Etiam dui augue, congue eget sem eu, scelerisque pulvinar odio.</p>
+
+					<p class="service-brands-bottom-text">Vivamus orci turpis, posuere vitae fringilla id, accumsan quis
+						tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+						Vivamus suscipit dignissim lectus, et pellentesque dolor lacinia vel. Proin rutrum tempor lectus
+						ac pulvinar. Proin quis pretium augue. Quisque quis nisi dui. Donec urna dui, elementum sit amet
+						consectetur sit amet, pharetra sit amet leo. Sed posuere placerat sodales. Integer eget eros
+						massa. Sed vehicula elit at eros fringilla, posuere facilisis lacus facilisis. Sed lobortis,
+						nunc eget tincidunt semper, mi erat varius est, eu euismod purus augue eu massa. </p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<section class="footer-sosmed footer-content flex flex-center">
+			<div class="footer-sosmed-container container">
+				<div class="footer-logos-group flex flex-between">
+					<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+					<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+							class="footer-sosmed-logos" /></a>
+					<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+					<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+				</div>
+			</div>
+		</section>
+		<section class="footer-nav footer-content flex flex-center">
+			<div class="footer-nav-container container">
+				<div class="footer-contact-group">
+					<ul class="flex flex-between">
+						<li><a href="#">DOMOV</a></li>
+						<li><a href="#">SERVIS</a></li>
+						<li><a href="#">KONTAKT</a></li>
+						<li><a href="#">O NAS</a></li>
+						<li><a href="#">CLANKI</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="footer-contact footer-content flex flex-center">
+			<div class="
+					footer-contact-container
+					container container-m
+					flex flex-between
+				">
+				<section class="footer-contact-left flex flex-v-center">
+					<i class="header-icons i-phone"></i>
+					<p>051 494 000 | 070 421 117</p>
+					<i class="header-icons i-location"></i>
+					<p>Ljubljana, Tržaška cesta 5</p>
+					<i class="header-icons i-mail"></i>
+					<p>info@mobistekla.si</p>
+				</section>
+				<section class="footer-contact-right flex flex-v-center">
+					<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+					<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+				</section>
+			</div>
+		</section>
+		<section class="footer-mobile flex flex-column flex-v-center">
+			<h4>Delovni cas</h4>
+			<div class="footer-mobile-opening flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</div>
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+			</div>
+
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+			</div>
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</div>
+
+			<div class="footer-mobile-socialmedia flex">
+				<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+				<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+						class="footer-sosmed-logos" /></a>
+				<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+				<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+			</div>
+		</section>
+	</footer>
+</body>
+
+</html>

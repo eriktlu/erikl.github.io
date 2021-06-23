@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/styles.css" />
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+
+	<!-- SCRIPT TO STOP TRANSITIONS WHILE ADJUSTING WINDOW SIZE -->
+	<script src="js/stop-transition.js"></script>
+
+	<!-- SCRIPT NOT ALLOWING TO SCROLL WHEN MENU OPENED - MOBILE ONLY -->
+	<script src="js/dropDown.js"></script>
+
+	<title>Mobistekla</title>
+</head>
+
+<body>
+	<!-- HEADER AREA - ONLY SHOWN ON DESKTOPS -->
+	<header class="main-header flex-center flex">
+		<div class="header-container container container-l flex flex-between">
+			<section class="header-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</section>
+			<section class="header-info flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</section>
+		</div>
+	</header>
+
+	<!-- NAVIGATION -->
+	<nav class="main-navigation flex flex-center flex-v-center">
+		<div class="
+					nav-container
+					container container-m
+					flex flex-between flex-v-center
+				">
+			<input type="checkbox" class="mobile-nav-toggle" id="mobile-nav-toggle" onclick="dropDown()" />
+			<label for="mobile-nav-toggle" class="mobile-nav-toggle-label flex flex-v-center">
+				<span></span>
+			</label>
+
+			<section class="navigation-logo">
+				<a href="#" class="flex flex-center"><img src="images/Mobistekla-Logo.png" alt="Mobistekla Logo" /></a>
+			</section>
+
+			<section class="navigation-menu" id="navMobMenu" aria-expanded="false">
+				<ul class="flex flex-between">
+					<li><a href="#" class="nav-menu-link">DOMOV</a></li>
+					<li>
+						<a href="#" class="nav-menu-link">SERVIS</a>
+						<!-- MEGA DROPDOWN MENU - ONLY FOR DESKTOP -->
+						<div class="menu-sub container-m">
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPhone</h3>
+								<ul>
+									<li><a href="#">iPhone 12 Pro</a></li>
+									<li><a href="#">iPhone SE 2nd</a></li>
+									<li><a href="#">iPhone 11 Pro Max</a></li>
+									<li><a href="#">iPhone 11 Pro</a></li>
+									<li><a href="#">iPhone XR</a></li>
+									<li><a href="#">iPhone XS</a></li>
+									<li><a href="#">iPhone XS Max</a></li>
+									<li><a href="#">iPhone X</a></li>
+									<li><a href="#">iPhone 12 Mini</a></li>
+									<li><a href="#">iPhone 8 Plus</a></li>
+									<li><a href="#">iPhone 8</a></li>
+									<li><a href="#">iPhone 7 Plus</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPad</h3>
+								<ul>
+									<li><a href="#">iPad Air 3 (2019)</a></li>
+									<li><a href="#">iPad 8th Gen 10.2 (2020)</a></li>
+									<li><a href="#">iPad Pro 11 (2018)</a></li>
+									<li><a href="#">iPad 7th Gen 10.2 (2019)</a></li>
+									<li><a href="#">iPad Pro 12.9 (2018)</a></li>
+									<li><a href="#">iPad Air 6th Gen (2018)</a></li>
+									<li><a href="#">iPad Air 5th Gen (2017)</a></li>
+									<li><a href="#">iPad Mini 4</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+
+								<h3 class="menu-sub-heading">MacBook</h3>
+								<ul>
+									<li><a href="#">MacBook Air 13 Inch</a></li>
+									<li><a href="#">MacBook Air 11 Inch</a></li>
+									<li><a href="#">MacBook Pro Retina</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Samsung</h3>
+								<ul>
+									<li><a href="#">Samsung Galaxy S20</a></li>
+									<li><a href="#">Samsung Galaxy S20 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S20 Ultra</a></li>
+									<li><a href="#">Samsung Galaxy S10</a></li>
+									<li><a href="#">Samsung Galaxy S10 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S10 5G</a></li>
+									<li><a href="#">Samsung Galaxy S9 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S9</a></li>
+									<li><a href="#">Samsung Galaxy S8</a></li>
+									<li><a href="#">Samsung Galaxy S8 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S7</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Huawei</h3>
+								<ul>
+									<li><a href="#">Huawei Mate 20 Pro</a></li>
+									<li><a href="#">Huawei Mate 20 Lite</a></li>
+									<li><a href="#">Huawei Mate 20 X</a></li>
+									<li><a href="#">Huawei Mate 30</a></li>
+									<li><a href="#">Huawei Mate 30 Pro</a></li>
+									<li><a href="#">Huawei Mate 30E Pro</a></li>
+									<li><a href="#">Huawei Mate 30 RS</a></li>
+									<li><a href="#">Huawei MatePad Pro</a></li>
+									<li><a href="#">Huawei Mate Xs</a></li>
+									<li><a href="#">Huawei Mate 40</a></li>
+									<li><a href="#">Huawei Mate 40 Pro</a></li>
+									<li><a href="#">Huawei Mate 40 Pro+</a></li>
+									<li><a href="#">Huawei Mate 40 RS</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+						</div>
+					</li>
+					<li><a href="#" class="nav-menu-link">KONTAKT</a></li>
+					<li><a href="#" class="nav-menu-link">O NAS</a></li>
+					<li><a href="#" class="nav-menu-link">ZANIMIVO</a></li>
+					<li><a href="#" class="nav-menu-link">GALERIJA POPRAVIL</a></li>
+				</ul>
+
+				<!-- HAMBURGER MENU - ONLY FOR MOBILE -->
+				<article class="menu-mobile flex flex-column flex-v-center" id="menMob">
+					<h5>Delovni cas</h5>
+					<div class="menu-mobile-opening flex">
+						<p>
+							<span class="header-info-opening">PON - ČET</span> 9.00-18.00
+						</p>
+						<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+						<p>051 494 000 | 070 421 117</p>
+					</div>
+
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/maps-and-flags.svg" alt="Company phone number"
+							class="header-icons i-location" />
+						<p>Ljubljana, Tržaška cesta 5</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+						<p>info@mobistekla.si</p>
+					</div>
+
+					<div class="menu-mobile-socialmedia flex">
+						<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+						<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+								class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+					</div>
+				</article>
+
+			</section>
+
+			<!-- SEARCH BUTTON - MOBILE ONLY -->
+			<section class="mobile-search-button">
+				<input type="checkbox" class="mobile-search-toggle" id="mobile-search-toggle"/>
+				<label for="mobile-search-toggle" class="mobile-search-toggle-label flex flex-v-center">
+					<img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image" />
+				</label>
+				<div class="mobile-search-group flex">
+					<label for="mobile-search-toggle" class="mobile-search-toggle-label-close flex flex-center flex-v-center">
+						<img src="icons/close.svg" alt="Close Search" class="mobile-search-close">
+					</label>
+					<form action="/" class="mobile-search-form flex flex-center flex-v-center">
+						<div class="mobile-search-field flex flex-center">
+							<input type="search" name="mobile-search" id="mobile-search" placeholder="Iskanje">
+							<span class="mobile-search-submit-group flex"><button type="submit" class="mobile-search-submit"><img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image-small" /></button></span>
+						</div>
+					</form>
+				</div>
+
+				
+			</section>
+		</div>
+	</nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="blog-page">
+
+        <!-- PAGE BORDER -->
+        <section class="page-border main-content">
+            <div class="container container-m">
+                <div class="page-border-line"></div>
+            </div>
+        </section>
+
+        <!-- BREADCRUMBS -->
+        <section class="page-breadcrumbs main-content">
+            <div class="container container-m">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a href="#" class="breadcrumbs-link">Zanimivo</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- BLOG POST (INCLUDE PREVIOUS POSTS) -->
+        <section class="main-content blog-post-content section-freespace-top section-freespace-bottom">
+
+            <!-- 
+                BANNER ON MOBILE
+            
+                <img src="[imageSrc]" alt="[imageDescription]">
+            -->
+            <section class="blog-banner-mobile">
+                <img src="images/Blog-Image.png" alt="Blost post image">
+            </section>
+
+            <div class="container container-m blog-post-container flex">
+                <section class="blog-content-main main-content flex-column">
+                    <article class="blog-header-group flex flex-column">
+                        <section class="blog-heading">
+
+                            <!-- 
+                                BLOG HEADER 
+
+                                <header>
+                                    <h1 class="blog-post-header">[articleName]</h1>
+                                </header>
+                            -->
+                            <header>
+                                <h1 class="blog-post-header">KAKŠNA JE RAZLIKA MED ELEKTRIČNIM SKIROJEM XIAOMI M365 IN XIAOMI M365 PRO</h1>
+                            </header>
+                            <!-- 
+                                BLOG UPLOAD DATE 
+                            
+                                <p class="blog-post-added-date">[date]</p>
+                            -->
+                            <p class="blog-post-added-date">2.5.2021</p>
+                        </section>
+
+                        <!-- 
+                            BANNER ON DESKTOP
+                        
+                            <img src="[imageSrc]" alt="[imageDescription]">
+                        -->
+                        <section class="blog-banner">
+                            <img src="images/Blog-Image.png" alt="Blost post image">
+                        </section>
+                    </article>
+
+                    <!-- BLOG TEXT -->
+                    <article class="blog-body-text">
+
+                        <!-- 
+                            BLOG PARAGRAPH
+                        
+                            <p class="blog-paragraph">[paragraphText]</p>
+                        -->
+                        <p class="blog-paragraph">Ste pred svojim prvim nakupom električnega skiroja in kolebate katerega izbrati? Na Mobistekla.si smo za vas pripravili primerjavo med dvema najbolj prodajanima modeloma podjetja Xiaomi, ki se uvršča v ožji krog vodilnih svetovnih proizvajalcev elektronike. Razlog? Preprost. Pred kratkim smo našo ponudbo storitev servisiranja namreč razširili tudi na električne skiroje. Prodajni uspešnici električna skiroja Xiaomi M365 in novejša različica M365 Pro sta si po imenu na prvo žogo morda podobni, vendarle pa obstaja nekaj poglavitnih razlik med  njima. </p>
+
+                        <p class="blog-paragraph">Za naročilo popravilo skiroja Xiaomi M365 in M365 Pro kliknite <a class="blog-link" href="https://www.mobistekla.si/popravila/Xiaomi/Elektri%C4%8Dni-skiro-M365-%E2%88%95-Pro/">tukaj</a> (nek gumb do linka)</p>
+
+                        <!-- 
+                            BLOG IMAGE
+                        
+                            <div class="blog-image-group">
+                                <div class="blog-post-image">
+                                    <img src="[src]" alt="[desc]">
+                                </div>
+                            </div>
+
+
+                            MULTIPLE ON SAME ROW:
+
+                            <div class="blog-image-group">
+                                <div class="blog-post-image">
+                                    <img src="[src]" alt="[desc]">
+                                </div>
+                                <div class="blog-post-image">
+                                    <img src="[src]" alt="[desc]">
+                                </div>
+                                <div class="blog-post-image">
+                                    <img src="[src]" alt="[desc]">
+                                </div>
+                            </div>
+
+                            DIFFERENT ROWS:
+                             <div class="blog-image-group">
+                                <div class="blog-post-image">
+                                    <img src="[src]" alt="[desc]">
+                                </div>
+                                <div class="blog-post-image">
+                                    <img src="[src]" alt="[desc]">
+                                </div>
+                            </div>
+                            <div class="blog-image-group">
+                                <div class="blog-post-image">
+                                    <img src="[src]" alt="[desc]">
+                                </div>
+                                <div class="blog-post-image">
+                                    <img src="[src]" alt="[desc]">
+                                </div>
+                            </div>
+                        -->
+
+                        <div class="blog-image-group">
+                            <div class="blog-post-image">
+                                <img src="images/1.slikaXIAOMI M365.jpg" alt="image">
+                            </div>
+                            <div class="blog-post-image">
+                                <img src="images/2.slikaXIAOMI M365 PRO.jpg" alt="image">
+                            </div>
+                        </div>
+
+                        <!-- 
+                            PARAGRAPH HEADER
+                        
+                            <h5 class="blog-paragrahp-header">[paragraphHeader]</h5>
+                        -->
+
+                        <h5 class="blog-paragrahp-header">Baterija</h5>
+
+                        <p class="blog-paragraph">Kapaciteta baterije električnega skiroja Xiaomi M365, ki se nahaja pod ploščo na kateri stojite, je 280Wh, kar zadošča za 30 kilometrov vožnje. Čas polnjenja je dobrih 5ur. Verzija M365 Pro  v sebi skriva skoraj dvakrat močnejšo baterijo s kapaciteto 474Wh. Sam čas polnjenja se sicer podaljša za 3ure, kar pa Xiaomi M365 Pro nadoknadi s 15 kilometrov daljšim dometom, ki znaša dobrih 45km. Naj vas opomnemo, da so te vrednosti, navedene s strani proizvajalca, merjene v idealnih pogojih in so v običajnih pogojihi nekaj kilometrov krajše.</p>
+
+                        <div class="blog-image-group">
+                            <div class="blog-post-image">
+                                <img src="images/3.SLIKA.XIAOMI M365 PRO DOMET.jpg" alt="image">
+                            </div>
+                        </div>
+
+                        <h5 class="blog-paragrahp-header">Moč motorja in končna hitrost</h5>
+
+                        <!-- 
+                            BLOG LINK
+                        
+                            <a href="[link]" class="blog-link">
+                        -->
+
+                        <p class="blog-paragraph">Oba Xiaomi M365 in M365 Pro sta idealna skiroja za vsakdanjo uporabo. Njuna končna hitrost je enaka in znaša 25 kilometrov na uro, ob dejstvu, da Pro model ponuja še dodaten način vožnje. Osnovni model omogoča ECO način, ki dovoljuje hitrost do 18 km/h in NORMAL do 25km/h. Pri M365 Pro pa ECO 15km/h, STANDARD način do 20km/h in SPORT, ki vas požene do končne htrosti. Sam motor je nameščen v prvem kolesu skiroja in pri Xiaomi M365 proizvaja 250W moči, Pro verzija pa jih ima 300. V praksi je to opazno pri nekoliko boljših pospeških in dejstvu da novejši model zmore prevoziti do 20% naklone, medtem ko starejša verzija omaga pri 15% klancu. Pri Mobistekla.si pa dodatno ponujamo tudi možnost nadgradnje <a href="https://www.mobistekla.si/popravila/Xiaomi/Elektri%C4%8Dni-skiro-M365-%E2%88%95-Pro/Nadgradnja-hitrosti/" class="blog-link">končne hitrosti</a> na 30 km/h 
+                        </p>
+
+                        <h5 class="blog-paragrahp-header">LED display in materiali</h5>
+
+                        <p class="blog-paragraph">Električni skiro Xiaomi M365 tehta 12,7kg, kar je 1,5kg manj od M365 Pro. Razlog temu je močnejša, posledično zato tudi malo težja baterija. Oba skriroja sta narejena iz kakovostnih komponent, imata robusten zložljiv del, ki je pri modelu Pro še nekoliko ojačan. LED display ki je vgrajen v osnovno različico kaže stanje baterije, medtem ko se M365 Pro ponaša z novim naprednejšim LED zaslonom, ki prkazuje poleg baterije še trenutno hitrost, izbran način vožnje, bluetooth povezavo, pa tudi opozarjai na morebitne napake naprave. <a href="https://www.mobistekla.si/popravila/Xiaomi/Elektri%C4%8Dni-skiro-M365-%E2%88%95-Pro/Menjava-digitalne-konzole/" class="blog-link">Menjava LED zaslona</a>
+                        </p>
+
+                        <div class="blog-image-group">
+                            <div class="blog-post-image">
+                                <img src="images/4.slika xiaomi m365pro display.jpg" alt="image">
+                            </div>
+                        </div>
+
+                        <h5 class="blog-paragrahp-header">Zavore in pnevmatike</h5>
+
+                        <p class="blog-paragraph">Pri Xiaomiju so se odločili na oba modela namestiti napihljive pnevmatike, ki ponujajo udobnejšo vožnjo od trdih gum. Njihova pomankljivost pa je krajša življenska doba, saj se lahko predrejo oziroma hitreje obrabijo od polnih pnevmatik. Pri Mobistekla.si znamo popravitii vse modele gum, po želji pa lahko namestimo takega, ki odgovarja Vam. Za premontažo s polno pnevmatiko kliknite <a href="https://www.mobistekla.si/popravila/Xiaomi/Elektri%C4%8Dni-skiro-M365-%E2%88%95-Pro/Premonta%C5%BEa-s-polno-pneumatiko/" class="blog-link">tukaj</a>, če želite menjavo mehke pnevmatike pa je ta pravi link za <a href="https://www.mobistekla.si/popravila/Xiaomi/Elektri%C4%8Dni-skiro-M365-%E2%88%95-Pro/Premonta%C5%BEa-pneumatike/" class="blog-link">vas </a>
+                        </p>
+
+                        <p class="blog-paragraph">Xiaomi M365 in Xiaomi M365 Pro imata enak tip zaviranja in sicer zaviranje motorja prednjega kolesa in zavorni disk na zadnjem kolesu, katerega menjavo lahko naročite <a href="https://www.mobistekla.si/popravila/Xiaomi/Elektri%C4%8Dni-skiro-M365-%E2%88%95-Pro/Menjava-zavornega-diska/" class="blog-link">tukaj</a>. Prednja LED in zadnja zavorna luč zagotavljata, da ste vidni tudi ob slabši vidljivosti. Pri Xiaomiju pa so tudi poskrbeli, da ob zaviranju sistem Energy recovery proizvaja še dodatno energijo. Pametno, kajne?
+                        </p>
+
+                        <div class="blog-image-group">
+                            <div class="blog-post-image">
+                                <img src="images/5.slika xiaomi m365 ZADNJA LUC.jpg" alt="image">
+                            </div>       
+                        </div>
+
+                        <h5 class="blog-paragrahp-header">Končna ocena</h5>
+
+                        <p class="blog-paragraph">Oba električna skiroja sta v svojem cenovnem razredu smatrana med boljšimi. Razlika v ceni znaša približno 200€, odvisno od prodajalca. Vsekakor se razlika v ceni opazi pri testiranju, kjer je pričakovano Xiaomi M365 Pro dobil nekoliko višje ocene od starejšega brata. Za tiste ki prvič razmišljate o nakupu električnega skiroja ali jih želite za svoje otroke in jih ne nameravate vsakodnevno uporabljati, povsem zadošča osnovni model M365. Pri zahtevnejših uporabnikih, ki skiro uporabljajo kot prevozno sredstvo ali stavijo na kvaliteto produkta, pa bi priporočili nadgrajeno različico Xiaomi M365 Pro.
+                        </p>
+
+                        <p class="blog-paragraph">Za vsa servisiranje in popravila obeh modelov Xiaomi pa pri Mobistekla.si poskrbimo na tem <a href="https://www.mobistekla.si/popravila/Xiaomi/Elektri%C4%8Dni-skiro-M365-%E2%88%95-Pro/" class="blog-link">mestu</a>
+                        </p>
+
+                    </article>
+                </section>
+
+
+                <!-- PREVIOUS BLOG POSTS -->
+                <section class="blog-previous-posts">
+                    <article>
+
+                        <!-- 
+                            PREVIOUS POST HEADER
+                        
+                            <header>
+                                <h4>[previousHeader]</h4>
+                            </header>
+                        -->
+                        <header>
+                            <h4>NAZADNJE OBJAVLJENO</h4>
+                        </header>
+
+                        <!-- PREVIOUS BLOG POST PREVIEW -->
+                        <div class="previous-posts-group">
+                            <a href="#" class="blog-previous-post-card">
+                                <!-- 
+                                    PREVIOUS BLOG IMAGE 
+                                
+                                    <img src="[source]" alt="[description]">
+                                -->
+                                <img src="images/Blog-Image.png" alt="Previous Blog Post Banner">
+
+                                <!-- 
+                                    PREVIOUS HEADER/PREVIEW TEXT
+                                
+                                    <div class="previous-post-text">
+                                        <h5 class="previous-post-title">[previouseText]</h5>
+                                        <p class="previous-post-date">[previousDate]</p>
+                                    </div>
+                                -->
+                                <div class="previous-post-text">
+                                    <h5 class="previous-post-title">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</h5>
+                                    <p class="previous-post-date">25.4.2021</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="blog-previous-post-card">
+                                <img src="images/Blog-Image.png" alt="Previous Blog Post Banner">
+                                <div class="previous-post-text">
+                                    <h5 class="previous-post-title">KAKO PRIDOBIMO PODATKE S TELEFONA, KI SE NE PRIŽGE - POPRAVILO NA OSNOVNI PLOŠČI</h5>
+                                    <p class="previous-post-date">25.4.2021</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="blog-previous-post-card">
+                                <img src="images/Blog-Image.png " alt="Previous Blog Post Banner">
+                                <div class="previous-post-text">
+                                    <h5 class="previous-post-title">BREZPLAČNI NADOMESTNI TELEFONI</h5>
+                                    <p class="previous-post-date">25.4.2021</p>
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer-sosmed footer-content flex flex-center">
+            <div class="footer-sosmed-container container">
+                <div class="footer-logos-group flex flex-between">
+                    <a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+                    <a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+                            class="footer-sosmed-logos" /></a>
+                    <a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+                    <a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+                </div>
+            </div>
+        </section>
+        <section class="footer-nav footer-content flex flex-center">
+            <div class="footer-nav-container container">
+                <div class="footer-contact-group">
+                    <ul class="flex flex-between">
+                        <li><a href="#">DOMOV</a></li>
+                        <li><a href="#">SERVIS</a></li>
+                        <li><a href="#">KONTAKT</a></li>
+                        <li><a href="#">O NAS</a></li>
+                        <li><a href="#">CLANKI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footer-contact footer-content flex flex-center">
+            <div class="
+                    footer-contact-container
+                    container container-m
+                    flex flex-between
+                ">
+                <section class="footer-contact-left flex flex-v-center">
+                    <i class="header-icons i-phone"></i>
+                    <p>051 494 000 | 070 421 117</p>
+                    <i class="header-icons i-location"></i>
+                    <p>Ljubljana, Tržaška cesta 5</p>
+                    <i class="header-icons i-mail"></i>
+                    <p>info@mobistekla.si</p>
+                </section>
+                <section class="footer-contact-right flex flex-v-center">
+                    <p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+                    <p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+                </section>
+            </div>
+        </section>
+        <section class="footer-mobile flex flex-column flex-v-center">
+            <h4>Delovni cas</h4>
+            <div class="footer-mobile-opening flex">
+                <p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+                <p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+            </div>
+            <div class="footer-mobile-info flex flex-v-center">
+                <img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+                <p>051 494 000 | 070 421 117</p>
+            </div>
+
+            <div class="footer-mobile-info flex flex-v-center">
+                <img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+                <p>Ljubljana, Tržaška cesta 5</p>
+            </div>
+            <div class="footer-mobile-info flex flex-v-center">
+                <img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+                <p>info@mobistekla.si</p>
+            </div>
+
+            <div class="footer-mobile-socialmedia flex">
+                <a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+                <a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+                        class="footer-sosmed-logos" /></a>
+                <a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+                <a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/styles.css" />
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+
+	<!-- SCRIPT TO STOP TRANSITIONS WHILE ADJUSTING WINDOW SIZE -->
+	<script src="js/stop-transition.js"></script>
+
+	<!-- SCRIPT NOT ALLOWING TO SCROLL WHEN MENU OPENED - MOBILE ONLY -->
+	<script src="js/dropDown.js"></script>
+
+	<title>Mobistekla</title>
+</head>
+
+<body>
+	<!-- HEADER AREA - ONLY SHOWN ON DESKTOPS -->
+	<header class="main-header flex-center flex">
+		<div class="header-container container container-l flex flex-between">
+			<section class="header-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</section>
+			<section class="header-info flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</section>
+		</div>
+	</header>
+
+	<!-- NAVIGATION -->
+	<nav class="main-navigation flex flex-center flex-v-center">
+		<div class="
+					nav-container
+					container container-m
+					flex flex-between flex-v-center
+				">
+			<input type="checkbox" class="mobile-nav-toggle" id="mobile-nav-toggle" onclick="dropDown()" />
+			<label for="mobile-nav-toggle" class="mobile-nav-toggle-label flex flex-v-center">
+				<span></span>
+			</label>
+
+			<section class="navigation-logo">
+				<a href="#" class="flex flex-center"><img src="images/Mobistekla-Logo.png" alt="Mobistekla Logo" /></a>
+			</section>
+
+			<section class="navigation-menu" id="navMobMenu" aria-expanded="false">
+				<ul class="flex flex-between">
+					<li><a href="#" class="nav-menu-link">DOMOV</a></li>
+					<li>
+						<a href="#" class="nav-menu-link">SERVIS</a>
+						<!-- MEGA DROPDOWN MENU - ONLY FOR DESKTOP -->
+						<div class="menu-sub container-m">
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPhone</h3>
+								<ul>
+									<li><a href="#">iPhone 12 Pro</a></li>
+									<li><a href="#">iPhone SE 2nd</a></li>
+									<li><a href="#">iPhone 11 Pro Max</a></li>
+									<li><a href="#">iPhone 11 Pro</a></li>
+									<li><a href="#">iPhone XR</a></li>
+									<li><a href="#">iPhone XS</a></li>
+									<li><a href="#">iPhone XS Max</a></li>
+									<li><a href="#">iPhone X</a></li>
+									<li><a href="#">iPhone 12 Mini</a></li>
+									<li><a href="#">iPhone 8 Plus</a></li>
+									<li><a href="#">iPhone 8</a></li>
+									<li><a href="#">iPhone 7 Plus</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPad</h3>
+								<ul>
+									<li><a href="#">iPad Air 3 (2019)</a></li>
+									<li><a href="#">iPad 8th Gen 10.2 (2020)</a></li>
+									<li><a href="#">iPad Pro 11 (2018)</a></li>
+									<li><a href="#">iPad 7th Gen 10.2 (2019)</a></li>
+									<li><a href="#">iPad Pro 12.9 (2018)</a></li>
+									<li><a href="#">iPad Air 6th Gen (2018)</a></li>
+									<li><a href="#">iPad Air 5th Gen (2017)</a></li>
+									<li><a href="#">iPad Mini 4</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+
+								<h3 class="menu-sub-heading">MacBook</h3>
+								<ul>
+									<li><a href="#">MacBook Air 13 Inch</a></li>
+									<li><a href="#">MacBook Air 11 Inch</a></li>
+									<li><a href="#">MacBook Pro Retina</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Samsung</h3>
+								<ul>
+									<li><a href="#">Samsung Galaxy S20</a></li>
+									<li><a href="#">Samsung Galaxy S20 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S20 Ultra</a></li>
+									<li><a href="#">Samsung Galaxy S10</a></li>
+									<li><a href="#">Samsung Galaxy S10 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S10 5G</a></li>
+									<li><a href="#">Samsung Galaxy S9 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S9</a></li>
+									<li><a href="#">Samsung Galaxy S8</a></li>
+									<li><a href="#">Samsung Galaxy S8 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S7</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Huawei</h3>
+								<ul>
+									<li><a href="#">Huawei Mate 20 Pro</a></li>
+									<li><a href="#">Huawei Mate 20 Lite</a></li>
+									<li><a href="#">Huawei Mate 20 X</a></li>
+									<li><a href="#">Huawei Mate 30</a></li>
+									<li><a href="#">Huawei Mate 30 Pro</a></li>
+									<li><a href="#">Huawei Mate 30E Pro</a></li>
+									<li><a href="#">Huawei Mate 30 RS</a></li>
+									<li><a href="#">Huawei MatePad Pro</a></li>
+									<li><a href="#">Huawei Mate Xs</a></li>
+									<li><a href="#">Huawei Mate 40</a></li>
+									<li><a href="#">Huawei Mate 40 Pro</a></li>
+									<li><a href="#">Huawei Mate 40 Pro+</a></li>
+									<li><a href="#">Huawei Mate 40 RS</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+						</div>
+					</li>
+					<li><a href="#" class="nav-menu-link">KONTAKT</a></li>
+					<li><a href="#" class="nav-menu-link">O NAS</a></li>
+					<li><a href="#" class="nav-menu-link">ZANIMIVO</a></li>
+					<li><a href="#" class="nav-menu-link">GALERIJA POPRAVIL</a></li>
+				</ul>
+
+				<!-- HAMBURGER MENU - ONLY FOR MOBILE -->
+				<article class="menu-mobile flex flex-column flex-v-center" id="menMob">
+					<h5>Delovni cas</h5>
+					<div class="menu-mobile-opening flex">
+						<p>
+							<span class="header-info-opening">PON - ČET</span> 9.00-18.00
+						</p>
+						<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+						<p>051 494 000 | 070 421 117</p>
+					</div>
+
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/maps-and-flags.svg" alt="Company phone number"
+							class="header-icons i-location" />
+						<p>Ljubljana, Tržaška cesta 5</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+						<p>info@mobistekla.si</p>
+					</div>
+
+					<div class="menu-mobile-socialmedia flex">
+						<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+						<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+								class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+					</div>
+				</article>
+
+			</section>
+
+			<!-- SEARCH BUTTON - MOBILE ONLY -->
+			<section class="mobile-search-button">
+				<input type="checkbox" class="mobile-search-toggle" id="mobile-search-toggle"/>
+				<label for="mobile-search-toggle" class="mobile-search-toggle-label flex flex-v-center">
+					<img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image" />
+				</label>
+				<div class="mobile-search-group flex">
+					<label for="mobile-search-toggle" class="mobile-search-toggle-label-close flex flex-center flex-v-center">
+						<img src="icons/close.svg" alt="Close Search" class="mobile-search-close">
+					</label>
+					<form action="/" class="mobile-search-form flex flex-center flex-v-center">
+						<div class="mobile-search-field flex flex-center">
+							<input type="search" name="mobile-search" id="mobile-search" placeholder="Iskanje">
+							<span class="mobile-search-submit-group flex"><button type="submit" class="mobile-search-submit"><img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image-small" /></button></span>
+						</div>
+					</form>
+				</div>
+
+				
+			</section>
+		</div>
+	</nav>
+
+	<!-- MAIN CONTENT -->
+	<main class="product-page">
+
+		<!-- BREAD CRUMBS -->
+		<section class="page-breadcrumbs main-content">
+			<div class="container container-m">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs-item">
+						<a href="#" class="breadcrumbs-link">Servis</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="#" class="breadcrumbs-link">APPLE IPhone XR</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="#" class="breadcrumbs-link breadcrumbs-active">Popravilo stekla</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- PRODUCT INFORMATION -->
+		<section class="
+					product
+					main-content
+					section-freespace-bottom section-freespace-top
+				">
+			<div class="container container-l flex">
+				<header class="product-header-mobile">
+					<h1 class="main-heading">APPLE IPHONE XR - Popravilo stekla</h1>
+				</header>
+				<section class="product-image-selection flex flex-column flex-v-center">
+					<div class="select-product-group flex flex-column">
+
+						<!-- OPENS PRODUCT SELECTION MENU -->
+						<button class="select-product flex flex-between flex-v-center"
+							onclick="openSelectProductMenu()">
+
+							<img src="icons/load.svg" alt="Select model" />
+							<span>ZAMANJAVA MODELA</span>
+						</button>
+
+						<!-- 
+							PRODUCT SELECTION MENU
+
+							HOW TO USE:
+
+							<li><a href="[linkToProductPage]">[ProductName]</a></li>
+						
+							Everything inside [] needs to be replaced with a data from your end
+						-->
+						<div class="select-product-menu" id="selectProductMenuToggle">
+							<ul class="flex flex-column flex-v-center">
+								<li><a href="#">Test</a></li>
+								<li><a href="#">Test</a></li>
+								<li><a href="#">Test</a></li>
+								<li><a href="#">Test</a></li>
+								<li><a href="#">Test</a></li>
+								<li><a href="#">Test</a></li>
+								<li><a href="#">Test</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 
+						IMAGE OF THE PRODUCT
+
+						HOW TO USE: 
+					
+						<img src="[imageSource]" alt="[imageDescription]" class="product-image" />
+
+						Everything inside [] needs to be replaced with a data from your end
+					-->
+
+
+					<img src="images/iPhone.jpg" alt="iPhone" class="product-image" />
+				</section>
+				<section class="product-info">
+					<article class="product-description">
+						<header class="product-header">
+
+						<!-- PRODUCT NAME -->
+							<h1 class="main-heading">APPLE IPHONE XR - Popravilo stekla</h1>
+						</header>
+
+						<!-- PRODUCT STORAGE -->
+						<p class="storage">
+							Storitev: <span class="storage-location">Popravilo stekla</span>
+						</p>
+
+						<!-- 
+							PRODUCT PRICE 
+						
+							<p class="price">
+							Cena:
+							<span class="price-number">[price]</span><span class="price-currency">[currency]</span>
+						</p>
+						-->
+						<p class="price">
+							Cena:
+							<span class="price-number">100</span><span class="price-currency">€</span>
+						</p>
+
+						<!-- ADDITIONAL ITEMS WILL COME HERE -->
+						<div class="additional-items flex flex-column">
+						</div>
+
+						<div class="installment-payment flex flex-v-center">
+							<small>ali z obročnim plačilom&nbsp;</small>
+							<img src="images/leanpay.jpg" alt="leanpay payment" />
+							<small>&nbsp;
+								<!-- 
+									openReadMore opens the pop up dialog for message, the script is located in js/service-article.js
+								
+								-->
+								<span class="know-more" onclick="openReadMore(this)">?</span></small>
+							<div class="read-more">
+								<img src="icons/Exit.svg" alt="close read more" onclick="closeReadmore(this)" />
+
+								<!-- 
+									CHANGE DIALOG TEXT HERE 
+
+									<p class="read-more-text">
+										[youtText]
+									</p>
+								-->
+								<p class="read-more-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Mauris convallis porttitor ante et pellentesque. Praesent
+									non sollicitudin mi. Vivamus at eros vitae nibh porta
+									tincidunt.
+								</p>
+								<a href="#">VEC</a>
+							</div>
+						</div>
+
+						<!-- MONTHLY PAYMENT (FRONT END CALCULATION AUTOMATICALLY) -->
+						<div class="monthly-payment flex flex-column flex-center">
+							<div class="three-months flex flex-v-center">
+								<img src="icons/arrow-paragraph.svg" alt="Three months payment" />
+								<p>3 x <span id="three-months">0</span>€</p>
+							</div>
+							<div class="six-months flex">
+								<img src="icons/arrow-paragraph.svg" alt="Six months payment" />
+								<p>6 x <span id="six-months">0</span>€</p>
+							</div>
+							<div class="twelve-months flex">
+								<img src="icons/arrow-paragraph.svg" alt="Twelve months payment" />
+								<p>12 x <span id="twelve-months">0</span>€</p>
+							</div>
+						</div>
+
+						<!-- CONDITIONS -->
+						<ul class="conditions">
+							<li>
+								<small>Cena vključuje servis, material in
+									DDV.&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="know-more" onclick="openReadMore(this)">?</span></small>
+								<div class="read-more">
+									<img src="icons/Exit.svg" alt="close read more" onclick="closeReadmore(this)" />
+									<p class="read-more-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Mauris convallis porttitor ante et pellentesque. Praesent
+										non sollicitudin mi. Vivamus at eros vitae nibh porta
+										tincidunt.
+									</p>
+									<a href="#">VEC</a>
+								</div>
+							</li>
+							<li>
+								<small>Cena vključuje servis, material in
+									DDV.&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="know-more" onclick="openReadMore(this)">?</span></small>
+								<div class="read-more">
+									<img src="icons/Exit.svg" alt="close read more" onclick="closeReadmore(this)" />
+									<p class="read-more-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Mauris convallis porttitor ante et pellentesque. Praesent
+										non sollicitudin mi. Vivamus at eros vitae nibh porta
+										tincidunt.
+									</p>
+									<a href="#">VEC</a>
+								</div>
+							</li>
+							<li>
+								<small>Cena vključuje servis, material in
+									DDV.&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="know-more" onclick="openReadMore(this)">?</span></small>
+								<div class="read-more">
+									<img src="icons/Exit.svg" alt="close read more" onclick="closeReadmore(this)" />
+									<p class="read-more-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Mauris convallis porttitor ante et pellentesque. Praesent
+										non sollicitudin mi. Vivamus at eros vitae nibh porta
+										tincidunt.
+									</p>
+									<a href="#">VEC</a>
+								</div>
+							</li>
+							<li>
+								<small>Cena vključuje servis, material in
+									DDV.&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="know-more" onclick="openReadMore(this)">?</span></small>
+								<div class="read-more">
+									<img src="icons/Exit.svg" alt="close read more" onclick="closeReadmore(this)" />
+									<p class="read-more-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Mauris convallis porttitor ante et pellentesque. Praesent
+										non sollicitudin mi. Vivamus at eros vitae nibh porta
+										tincidunt.
+									</p>
+									<a href="#">VEC</a>
+								</div>
+							</li>
+							<li>
+								<small>Cena vključuje servis, material in
+									DDV.&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="know-more" onclick="openReadMore(this)">?</span></small>
+								<div class="read-more">
+									<img src="icons/Exit.svg" alt="close read more" onclick="closeReadmore(this)" />
+									<p class="read-more-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Mauris convallis porttitor ante et pellentesque. Praesent
+										non sollicitudin mi. Vivamus at eros vitae nibh porta
+										tincidunt.
+									</p>
+									<a href="#">VEC</a>
+								</div>
+							</li>
+							<li>
+								<small>Cena vključuje servis, material in
+									DDV.&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="know-more" onclick="openReadMore(this)">?</span></small>
+								<div class="read-more">
+									<img src="icons/Exit.svg" alt="close read more" onclick="closeReadmore(this)" />
+									<p class="read-more-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Mauris convallis porttitor ante et pellentesque. Praesent
+										non sollicitudin mi. Vivamus at eros vitae nibh porta
+										tincidunt.
+									</p>
+									<a href="#">VEC</a>
+								</div>
+							</li>
+							<li>
+								<small>Cena vključuje servis, material in
+									DDV.&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="know-more" onclick="openReadMore(this)">?</span></small>
+								<div class="read-more">
+									<img src="icons/Exit.svg" alt="close read more" onclick="closeReadmore(this)" />
+									<p class="read-more-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Mauris convallis porttitor ante et pellentesque. Praesent
+										non sollicitudin mi. Vivamus at eros vitae nibh porta
+										tincidunt.
+									</p>
+									<a href="#">VEC</a>
+								</div>
+							</li>
+						</ul>
+					</article>
+				</section>
+			</div>
+		</section>
+
+		<!-- NOTICE TEXT -->
+		<section class="notice-text main-content">
+			<div class="container container-s">
+				<p>
+					Imate počeno steklo, ekran vaše naprave Apple iPhone XR pa deluje
+					normalno – na sliki ni anomalij (črte, madeži) in touch deluje?
+					Zamenjamo vam samo steklo, s čimer ohranite originalen ekran in
+					prihranite veliko denarja.
+				</p>
+			</div>
+		</section>
+
+		<!-- CALLING/PRODUCT SERVICING OPTIONS -->
+		<section class="
+					product-call-to-action
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+			<div class="container container-s">
+
+				<!-- 
+					FORM START
+				
+					CHANGE FORM ATTRIBUTES SO IT MEETS YOUR NEEDS
+				-->
+				<form action="/" class="flex flex-around flex-wrap">
+					<input type="checkbox" class="repair-options" id="repair-options" />
+					<label for="repair-options" class="repair-options-button flex flex-v-center flex-center">
+						<p>Prinesi napravo v servis</p>
+					</label>
+
+					<!-- ADD NUMBER INSIDE HREF AFTER TEL:-->
+					<a class="call-button flex flex-v-center flex-center" href="tel:+00000000">
+						<img src="icons/call.svg" alt="Call" />
+						<p>Pokličite nas</p>
+					</a>
+
+					<!-- HIDDEN -->
+					<section class="
+							product-service-option
+							main-content
+							section-freespace-bottom section-freespace-top
+                            flex-between
+						">
+
+						<!-- COLLECT YOURSELF -->
+						<input type="radio" class="collect-yourself" id="collect-yourself" name="transportation-options"
+							checked onclick="setRequired()"/>
+						<label for="collect-yourself" class="collect-yourself-button flex flex-v-center flex-center">
+							<p>Osebni prevzem</p>
+						</label>
+
+						<!-- SEND BY MAIL -->
+						<input type="radio" class="send-by-mail" id="send-by-mail" name="transportation-options" onchange="setRequired()"/>
+						<label for="send-by-mail" class="send-by-mail-button flex flex-v-center flex-center">
+							<p>Pošlji po pošti</p>
+						</label>
+
+						<!-- COURIER -->
+						<input type="radio" class="courier" id="courier" name="transportation-options" onchange="setRequired()"/>
+						<label for="courier" class="courier-button flex flex-v-center flex-center" id='test'>
+							<p>Naroči kurirsko službo</p>
+						</label>
+
+						<div class="hidden-group">
+							<section class="hidden-information main-content">
+								<article class="transport-information">
+									<p class="hidden-title">Kontaktni podatki</p>
+
+									<!-- BUYER INFOMATION -->
+									<div class="contact-information-field flex flex-between">
+										<input type="text" name="firstName" placeholder="Ime" required/>
+										<input type="text" name="surname" placeholder="Priimek" required/>
+										<input type="tel" name="phoneNumber" placeholder="Telefonska št" required/>
+										<input type="email" name="firstName" placeholder="E-naslov" required/>
+									</div>
+
+									<!-- MAILING ADDRESS -->
+									<div class="address-mailing">
+										<p class="hidden-title">Naslov za pošiljanje po pošti</p>
+										<div class="flex flex-between">
+											<input type="text" name="mailAddress"
+												placeholder="Ulica in hišna št." class="address-mailing-field"/>
+											<input type="numbers" name="postalCode"
+												placeholder="Kraj in poštna št." class="address-mailing-field"/>
+										</div>
+									</div>
+
+									<!-- PICUP LOCATION -->
+									<div class="pickup-location">
+										<p class="hidden-title">Prevzemno mesto</p>
+										<input type="text" name="collectAddress"
+											placeholder="Naslov za prevzem" class="pickup-location-field"/>
+									</div>
+
+									<!-- COMPANY DETAILS SELECTIONS -->
+									<div class="legal-entity flex flex-v-center">
+										<input type="checkbox" name="" id="legal-entity-c" class="legal-entity-c"
+											onclick="showCompanyDetails()" />
+										<label for="legal-entity-c">
+											<p>
+												<i>Potrebujem račun za pravno osebo (s.p., d.o.o., d.d.,
+													javni zavod ali uprava)</i>
+											</p>
+										</label>
+									</div>
+
+									<!-- COMPANY DETAILS -->
+									<div class="company-details" id="company-details">
+										<p class="company-details-title hidden-title">Račun za pravno osebo</p>
+
+										<div class="flex">
+											<input type="text" name="companyName" placeholder="Ime podjetja" class="company-details-field"/>
+											<input type="text" name="companyAddress" placeholder="Naslov podjetja" class="company-details-field"/>
+										</div>
+
+										<div class="flex">
+											<input type="email" name="companyEmail"placeholder="E-naslov" class="company-details-field"/>
+											<input type="number" name="taxNumber" placeholder="Davčna številka" class="company-details-field"/>
+										</div>
+									</div>
+								</article>
+							</section>
+
+							<section class="product-problem main-content section-freespace-bottom
+                                                section-freespace-top">
+								<article class="flex flex-v-center flex-column">
+
+									<header>
+										<h2>PODROBNEJŠI OPIS NAPAKE IN DODATNE ŽELJE</h2>
+									</header>
+
+									<!-- PROBLEM DESCRIPTION -->
+									<textarea name="problem"
+										placeholder="Napišite željena popravila in dodatne želje"></textarea>
+
+									<!-- DEVICE LOCK -->
+									<div class="device-password flex flex-evenly flex-v-center">
+										<input type="text" name="devicePassword"
+											placeholder="Geslo za odklep naprave">
+										<a onclick="openDeviceCodeLock()">VNOS VZORCA</a>
+									</div>
+
+									<!-- 
+										DEVICE LOCK SELECTION
+
+										REPLACE <img src="images/iPhone.jpg" alt="Device open pattern" id="deviceLock"> WITH YOUR CODE 
+									-->
+									<div id="deviceLock">
+										<img src="images/iPhone.jpg" alt="Device open pattern" id="deviceLock">
+									</div>
+
+									<!-- URGENT REPAIRS -->
+									<div class="urgent-repair-group flex flex-v-center">
+										<input type="checkbox" name="urgentRepair" id="urgent-repair">
+										<label for="urgent-repair" class="urgent-repair-text">
+											<p>Želim urgentno popravilo (+10% cene oz. najmanj 10€).</p>
+										</label>
+
+										<small>&nbsp;<span class="know-more"
+												onclick="openReadMore(this)">?</span></small>
+										<div class="read-more">
+											<img src="icons/Exit.svg" alt="close read more"
+												onclick="closeReadmore(this)" />
+											<p class="read-more-text">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Mauris convallis porttitor ante et pellentesque. Praesent
+												non sollicitudin mi. Vivamus at eros vitae nibh porta
+												tincidunt.
+											</p>
+											<a href="#">VEC</a>
+										</div>
+									</div>
+								</article>
+							</section>
+
+							<!-- ADD REPAIRING OPTIONS -->
+							<section class="add-repair main-content section-freespace-bottom flex-column">
+								<h2>DODAJTE POPRAVILO</h2>
+								<div class="add-repair-scroll flex">
+									<a href="#" class="toggleLeft-repair flex flex-v-center"><i
+											class="repair-arrow arrow-left-repair arrow-left scroll-arrow text-light"></i>
+									</a>
+
+									<!-- 
+										REPAIR OPTIONS SCROLL
+									
+										HOW TO USE:
+											<li class="repair-card">
+												<input type="checkbox" name="repairOption" id="[uniqueID]"
+													class="device-option" value="[value]" onchange="addItem(this)">
+												<label for="[uniqueID]" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="[imageSource]" alt="[imageDescription]"
+																class="repair-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="repair-option-name sa-name">
+															[repairOptionText]
+														</small>
+
+														<small class="repair-option-price">
+															+ <span class="ro-price">[priceWithoutCurrency][currency] or [priceWithCurrency]</span>
+														</small>
+													</a>
+												</label>
+
+											</li>
+
+										Everything inside [] needs to be replaced with a data from your end
+										Minimum 4 due to responsive breakpoints
+									-->
+
+									<div id="repairOuter">
+										<ul id="repairBar">
+											<li class="repair-card">
+												<input type="checkbox" name="repairOption" id="repair-option-1"
+													class="device-option" value="item-1" onchange="addItem(this)">
+												<label for="repair-option-1" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center" id='tere'>
+															<img src="icons/stopwatch.svg" alt="Brand"
+																class="repair-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="repair-option-name sa-name">
+															Popravilo stekla kamere
+														</small>
+
+														<small class="repair-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+
+											</li>
+											<li class="repair-card">
+												<input type="checkbox" name="repairOption" id="repair-option-2"
+													class="device-option" value="item-2" onchange="addItem(this)">
+												<label for="repair-option-2" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt="Brand"
+																class="repair-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="repair-option-name sa-name">
+															Test
+														</small>
+
+														<small class="repair-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+											<li class="repair-card">
+												<input type="checkbox" name="repairOption" id="repair-option-3"
+													class="device-option" value="item-3" onchange="addItem(this)">
+												<label for="repair-option-3" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt="Brand"
+																class="repair-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="repair-option-name sa-name">
+															Test 2
+														</small>
+
+														<small class="repair-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+											<li class="repair-card">
+												<input type="checkbox" name="repairOption" id="repair-option-4"
+													class="device-option" value="item-4" onchange="addItem(this)">
+												<label for="repair-option-4" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt="Brand"
+																class="repair-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="repair-option-name sa-name">
+															Test 3
+														</small>
+
+														<small class="repair-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+											<li class="repair-card">
+												<input type="checkbox" name="repairOption" id="repair-option-5"
+													class="device-option" value="item-5" onchange="addItem(this)">
+												<label for="repair-option-5" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt="Brand"
+																class="repair-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="repair-option-name sa-name">
+															Test 4
+														</small>
+
+														<small class="repair-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<a href="#" class="toggleRight-repair flex flex-v-center">
+										<i class="repair-arrow arrow-right-repair scroll-arrow"></i>
+									</a>
+							</section>
+
+							<!-- DEVICE ACCESSORIES -->
+							<section class="device-accessories main-content section-freespace-bottom flex-column">
+								<h2>IZBERITE DODATNO OPREMO ZA VAŠO NAPRAVO</h2>
+								<div class="device-accessories-scroll flex">
+									<a href="#" class="toggleLeft-accessories flex flex-v-center"><i
+											class="accessories-arrow arrow-left-accessories arrow-left scroll-arrow text-light"></i>
+									</a>
+
+									<!-- 
+										DEVICE ACCESSORIES SCROLL
+									
+										HOW TO USE:
+
+										<li class="accessories-card">
+												<input type="checkbox" name="accessoriesOption"
+													id="[uniqueID]" class="device-option"
+													value="[value]" onchange="addItem(this)">
+												<label for="[uniqueID]" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="[imageSource]" alt="[imageDescription]"
+																class="accessories-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="accessories-option-name sa-name">
+															[accessoriesText]
+														</small>
+
+														<small class="accessories-option-price">
+															+ <span class="ro-price">[priceWithoutCurrency][currency] or [priceWithCurrency]</span>
+														</small>
+													</a>
+												</label>
+											</li>
+
+										Everything inside [] needs to be replaced with a data from your end
+										Minimum 4 due to responsive breakpoints
+									-->
+									<div id="accessoriesOuter">
+										<ul id="accessoriesBar">
+											<li class="accessories-card">
+												<input type="checkbox" name="accessoriesOption"
+													id="accessories-option-1" class="device-option"
+													value="accessories-item-1" onchange="addItem(this)">
+												<label for="accessories-option-1" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt=""
+																class="accessories-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="accessories-option-name sa-name">
+															Test 5
+														</small>
+
+														<small class="accessories-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+											<li class="accessories-card">
+												<input type="checkbox" name="accessoriesOption"
+													id="accessories-option-2" class="device-option"
+													value="accessories-item-2" onchange="addItem(this)">
+												<label for="accessories-option-2" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt=""
+																class="accessories-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="accessories-option-name sa-name">
+															Test 6
+														</small>
+
+														<small class="accessories-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+											<li class="accessories-card">
+												<input type="checkbox" name="accessoriesOption"
+													id="accessories-option-3" class="device-option"
+													value="accessories-item-3" onchange="addItem(this)">
+												<label for="accessories-option-3" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt=""
+																class="accessories-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="accessories-option-name sa-name">
+															Test 7
+														</small>
+
+														<small class="accessories-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+											<li class="accessories-card">
+												<input type="checkbox" name="accessoriesOption"
+													id="accessories-option-4" class="device-option"
+													value="accessories-item-4" onchange="addItem(this)">
+												<label for="accessories-option-4" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt=""
+																class="accessories-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="accessories-option-name sa-name">
+															Test 8
+														</small>
+
+														<small class="accessories-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+											<li class="accessories-card">
+												<input type="checkbox" name="accessoriesOption"
+													id="accessories-option-5" class="device-option"
+													value="accessories-item-5" onchange="addItem(this)">
+												<label for="accessories-option-5" class="device-option-group">
+													<a>
+														<div class="device-option-image flex flex-v-center flex-center">
+															<img src="icons/stopwatch.svg" alt=""
+																class="accessories-logo" />
+
+															<img src="icons/check.svg" alt="checked" class="check-icon">
+														</div>
+
+														<small class="accessories-option-name sa-name">
+															Test 9
+														</small>
+
+														<small class="accessories-option-price">
+															+ <span class="ro-price">21.99€</span>
+														</small>
+													</a>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<a href="#" class="toggleRight-accessories flex flex-v-center">
+										<i class="accessories-arrow arrow-right-accessories scroll-arrow"></i>
+									</a>
+								</div>
+							</section>
+
+							<!-- FORM SUBMIT -->
+							<section
+								class="device-submit main-content section-freespace-bottom flex-column flex-v-center">
+								<small>* Potrdilo naročila in ostale informacije boste prejeli na vaš e-poštni
+									naslov.</small>
+								<input type="submit" value="NAROČAM SE NA POPRAVILO" class="device-repair-submit">
+							</section>
+						</div>
+				</form>
+		</section>
+
+	</main>
+
+	<!-- SMALL SCRIPTS NEEDED FOR THIS PAGE, DROPDOWN, HIDDEN MENUS, DIALOG POPUPS -->
+	<script src="js/service-article.js"></script>
+
+	<!-- SCRIPT FOR ADDING ADDITIONAL ITEMS UNDER PRICE AND CHANGING PRICE WITH IT -->
+	<script src="js/additional-items.js"></script>
+
+	<!-- SCRIPTS FOR SCROLLS -->
+	<script src="js/accessories-scroll.js"></script>
+	<script src="js/repair-scroll.js"></script>
+
+	<!-- FOOTER -->
+	<footer>
+		<section class="footer-sosmed footer-content flex flex-center">
+			<div class="footer-sosmed-container container">
+				<div class="footer-logos-group flex flex-between">
+					<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+					<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+							class="footer-sosmed-logos" /></a>
+					<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+					<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+				</div>
+			</div>
+		</section>
+		<section class="footer-nav footer-content flex flex-center">
+			<div class="footer-nav-container container">
+				<div class="footer-contact-group">
+					<ul class="flex flex-between">
+						<li><a href="#">DOMOV</a></li>
+						<li><a href="#">SERVIS</a></li>
+						<li><a href="#">KONTAKT</a></li>
+						<li><a href="#">O NAS</a></li>
+						<li><a href="#">CLANKI</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="footer-contact footer-content flex flex-center">
+			<div class="
+					footer-contact-container
+					container container-m
+					flex flex-between
+				">
+				<section class="footer-contact-left flex flex-v-center">
+					<i class="header-icons i-phone"></i>
+					<p>051 494 000 | 070 421 117</p>
+					<i class="header-icons i-location"></i>
+					<p>Ljubljana, Tržaška cesta 5</p>
+					<i class="header-icons i-mail"></i>
+					<p>info@mobistekla.si</p>
+				</section>
+				<section class="footer-contact-right flex flex-v-center">
+					<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+					<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+				</section>
+			</div>
+		</section>
+		<section class="footer-mobile flex flex-column flex-v-center">
+			<h4>Delovni cas</h4>
+			<div class="footer-mobile-opening flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</div>
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+			</div>
+
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+			</div>
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</div>
+
+			<div class="footer-mobile-socialmedia flex">
+				<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+				<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+						class="footer-sosmed-logos" /></a>
+				<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+				<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+			</div>
+		</section>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/styles.css" />
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+
+	<!-- SCRIPT TO STOP TRANSITIONS WHILE ADJUSTING WINDOW SIZE -->
+	<script src="js/stop-transition.js"></script>
+
+	<!-- SCRIPT NOT ALLOWING TO SCROLL WHEN MENU OPENED - MOBILE ONLY -->
+	<script src="js/dropDown.js"></script>
+
+	<title>Mobistekla</title>
+</head>
+
+<body>
+	<!-- HEADER AREA - ONLY SHOWN ON DESKTOPS -->
+	<header class="main-header flex-center flex">
+		<div class="header-container container container-l flex flex-between">
+			<section class="header-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</section>
+			<section class="header-info flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</section>
+		</div>
+	</header>
+
+	<!-- NAVIGATION -->
+	<nav class="main-navigation flex flex-center flex-v-center">
+		<div class="
+					nav-container
+					container container-m
+					flex flex-between flex-v-center
+				">
+			<input type="checkbox" class="mobile-nav-toggle" id="mobile-nav-toggle" onclick="dropDown()" />
+			<label for="mobile-nav-toggle" class="mobile-nav-toggle-label flex flex-v-center">
+				<span></span>
+			</label>
+
+			<section class="navigation-logo">
+				<a href="#" class="flex flex-center"><img src="images/Mobistekla-Logo.png" alt="Mobistekla Logo" /></a>
+			</section>
+
+			<section class="navigation-menu" id="navMobMenu" aria-expanded="false">
+				<ul class="flex flex-between">
+					<li><a href="#" class="nav-menu-link">DOMOV</a></li>
+					<li>
+						<a href="#" class="nav-menu-link">SERVIS</a>
+						<!-- MEGA DROPDOWN MENU - ONLY FOR DESKTOP -->
+						<div class="menu-sub container-m">
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPhone</h3>
+								<ul>
+									<li><a href="#">iPhone 12 Pro</a></li>
+									<li><a href="#">iPhone SE 2nd</a></li>
+									<li><a href="#">iPhone 11 Pro Max</a></li>
+									<li><a href="#">iPhone 11 Pro</a></li>
+									<li><a href="#">iPhone XR</a></li>
+									<li><a href="#">iPhone XS</a></li>
+									<li><a href="#">iPhone XS Max</a></li>
+									<li><a href="#">iPhone X</a></li>
+									<li><a href="#">iPhone 12 Mini</a></li>
+									<li><a href="#">iPhone 8 Plus</a></li>
+									<li><a href="#">iPhone 8</a></li>
+									<li><a href="#">iPhone 7 Plus</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPad</h3>
+								<ul>
+									<li><a href="#">iPad Air 3 (2019)</a></li>
+									<li><a href="#">iPad 8th Gen 10.2 (2020)</a></li>
+									<li><a href="#">iPad Pro 11 (2018)</a></li>
+									<li><a href="#">iPad 7th Gen 10.2 (2019)</a></li>
+									<li><a href="#">iPad Pro 12.9 (2018)</a></li>
+									<li><a href="#">iPad Air 6th Gen (2018)</a></li>
+									<li><a href="#">iPad Air 5th Gen (2017)</a></li>
+									<li><a href="#">iPad Mini 4</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+
+								<h3 class="menu-sub-heading">MacBook</h3>
+								<ul>
+									<li><a href="#">MacBook Air 13 Inch</a></li>
+									<li><a href="#">MacBook Air 11 Inch</a></li>
+									<li><a href="#">MacBook Pro Retina</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Samsung</h3>
+								<ul>
+									<li><a href="#">Samsung Galaxy S20</a></li>
+									<li><a href="#">Samsung Galaxy S20 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S20 Ultra</a></li>
+									<li><a href="#">Samsung Galaxy S10</a></li>
+									<li><a href="#">Samsung Galaxy S10 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S10 5G</a></li>
+									<li><a href="#">Samsung Galaxy S9 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S9</a></li>
+									<li><a href="#">Samsung Galaxy S8</a></li>
+									<li><a href="#">Samsung Galaxy S8 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S7</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Huawei</h3>
+								<ul>
+									<li><a href="#">Huawei Mate 20 Pro</a></li>
+									<li><a href="#">Huawei Mate 20 Lite</a></li>
+									<li><a href="#">Huawei Mate 20 X</a></li>
+									<li><a href="#">Huawei Mate 30</a></li>
+									<li><a href="#">Huawei Mate 30 Pro</a></li>
+									<li><a href="#">Huawei Mate 30E Pro</a></li>
+									<li><a href="#">Huawei Mate 30 RS</a></li>
+									<li><a href="#">Huawei MatePad Pro</a></li>
+									<li><a href="#">Huawei Mate Xs</a></li>
+									<li><a href="#">Huawei Mate 40</a></li>
+									<li><a href="#">Huawei Mate 40 Pro</a></li>
+									<li><a href="#">Huawei Mate 40 Pro+</a></li>
+									<li><a href="#">Huawei Mate 40 RS</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+						</div>
+					</li>
+					<li><a href="#" class="nav-menu-link">KONTAKT</a></li>
+					<li><a href="#" class="nav-menu-link">O NAS</a></li>
+					<li><a href="#" class="nav-menu-link">ZANIMIVO</a></li>
+					<li><a href="#" class="nav-menu-link">GALERIJA POPRAVIL</a></li>
+				</ul>
+
+				<!-- HAMBURGER MENU - ONLY FOR MOBILE -->
+				<article class="menu-mobile flex flex-column flex-v-center" id="menMob">
+					<h5>Delovni cas</h5>
+					<div class="menu-mobile-opening flex">
+						<p>
+							<span class="header-info-opening">PON - ČET</span> 9.00-18.00
+						</p>
+						<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+						<p>051 494 000 | 070 421 117</p>
+					</div>
+
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/maps-and-flags.svg" alt="Company phone number"
+							class="header-icons i-location" />
+						<p>Ljubljana, Tržaška cesta 5</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+						<p>info@mobistekla.si</p>
+					</div>
+
+					<div class="menu-mobile-socialmedia flex">
+						<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+						<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+								class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+					</div>
+				</article>
+
+			</section>
+
+			<!-- SEARCH BUTTON - MOBILE ONLY -->
+			<section class="mobile-search-button">
+				<input type="checkbox" class="mobile-search-toggle" id="mobile-search-toggle"/>
+				<label for="mobile-search-toggle" class="mobile-search-toggle-label flex flex-v-center">
+					<img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image" />
+				</label>
+				<div class="mobile-search-group flex">
+					<label for="mobile-search-toggle" class="mobile-search-toggle-label-close flex flex-center flex-v-center">
+						<img src="icons/close.svg" alt="Close Search" class="mobile-search-close">
+					</label>
+					<form action="/" class="mobile-search-form flex flex-center flex-v-center">
+						<div class="mobile-search-field flex flex-center">
+							<input type="search" name="mobile-search" id="mobile-search" placeholder="Iskanje">
+							<span class="mobile-search-submit-group flex"><button type="submit" class="mobile-search-submit"><img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image-small" /></button></span>
+						</div>
+					</form>
+				</div>
+
+				
+			</section>
+		</div>
+	</nav>
+
+	<!-- MAIN CONTENT -->
+	<main class="status-open">
+
+		<!-- PAGE BORDER -->
+		<section class="page-border main-content">
+			<div class="container container-m">
+				<div class="page-border-line"></div>
+			</div>
+		</section>
+
+		<!-- STATUS INFORMATION -->
+		<section class="
+					status-information
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+			<div class="container container-m flex flex-column flex-v-center">
+
+				<!-- ALL THE INFORMATION GOES HERE -->
+				<p class="status-infomation-title">Status popravila:</p>
+				<p class="status-information-info">13552</p>
+
+				<p class="status-infomation-title">Znamka:</p>
+				<p class="status-information-info">Apple</p>
+
+				<p class="status-infomation-title">Model:</p>
+				<p class="status-information-info">Iphone 11</p>
+
+				<p class="status-infomation-title">Opis napake:</p>
+				<p class="status-information-info">
+					backplate x - javi ceno, partner
+				</p>
+			</div>
+		</section>
+
+		<!-- CURRENT STATUS -->
+		<section class="
+					status-current
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+			<div class="container container-m flex flex-column flex-v-center">
+				<header>
+					<h2>TRENUTNI STATUS VAŠEGA POPRAVILA</h2>
+				</header>
+				<div class="status-scroll flex">
+
+					<a href="#" class="toggleLeft-status flex flex-v-center">
+						<i class="
+							status-arrow
+							arrow-left-status arrow-left
+							scroll-arrow
+							text-light
+						"></i>
+					</a>
+
+					<!-- 
+						STATUS SCROLL
+					
+						HOW TO USE:
+
+						<li class="status-card">
+							<img src="icons/down_arrow.svg" alt="Current Card" class="status-card-icon" />
+							<article class="flex flex-v-center flex-column">
+								<header>
+									<h4>[HEADING]</h4>
+								</header>
+								<p>
+									[text]
+								</p>
+							</article>
+							<p class="status-counter-number">
+								<span class="current-status-count"></span> /
+								<span class="total-status-count"></span>
+							</p>
+						</li>
+
+						Everything inside [] needs to be replaced with a data from your end
+						Minimum 4 due to responsive breakpoints
+
+					-->
+					<div id="statusOuter">
+						<ul id="statusBar" class="flex">
+							<li class="status-card">
+								<img src="icons/down_arrow.svg" alt="Current Card" class="status-card-icon" />
+								<article class="flex flex-v-center flex-column">
+									<header>
+										<h4>V TESTIRANJU</h4>
+									</header>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Aenean at ligula tempor, tincidunt dui in, pulvinar mi.
+										Aliquam interdum, augue eget dapibus tempus, ex odio
+										imperdiet nisi, et elementum justo felis sed nulla. Morbi
+										nibh turpis, suscipit in sem id, tincidunt imperdiet enim.
+										Quisque at ip sum non erat bibendum scelerisque sed quis
+										risus.
+									</p>
+								</article>
+								<p class="status-counter-number">
+									<span class="current-status-count"></span> /
+									<span class="total-status-count"></span>
+								</p>
+							</li>
+
+							<li class="status-card">
+								<img src="icons/down_arrow.svg" alt="Current Card" class="status-card-icon" />
+								<article class="flex flex-v-center flex-column not-focus">
+									<header>
+										<h4>V TESTIRANJU</h4>
+									</header>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Aenean at ligula tempor, tincidunt dui in, pulvinar mi.
+										Aliquam interdum, augue eget dapibus tempus, ex odio
+										imperdiet nisi, et elementum justo felis sed nulla. Morbi
+										nibh turpis, suscipit in sem id, tincidunt imperdiet enim.
+										Quisque at ip sum non erat bibendum scelerisque sed quis
+										risus.
+									</p>
+								</article>
+								<p class="status-counter-number">
+									<span class="current-status-count"></span> /
+									<span class="total-status-count"></span>
+								</p>
+							</li>
+
+							<li class="status-card">
+								<img src="icons/down_arrow.svg" alt="Current Card" class="status-card-icon" />
+								<article class="flex flex-v-center flex-column not-focus">
+									<header>
+										<h4>V TESTIRANJU</h4>
+									</header>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Aenean at ligula tempor, tincidunt dui in, pulvinar mi.
+										Aliquam interdum, augue eget dapibus tempus, ex odio
+										imperdiet nisi, et elementum justo felis sed nulla. Morbi
+										nibh turpis, suscipit in sem id, tincidunt imperdiet enim.
+										Quisque at ip sum non erat bibendum scelerisque sed quis
+										risus.
+									</p>
+								</article>
+								<p class="status-counter-number">
+									<span class="current-status-count"></span> /
+									<span class="total-status-count"></span>
+								</p>
+							</li>
+
+							
+							
+						</ul>
+					</div>
+					<a href="#" class="toggleRight-status flex flex-v-center">
+						<i class="status-arrow arrow-right-status scroll-arrow"></i>
+					</a>
+				</div>
+				<div class="status-counte-group flex flex-center"></div>
+			</div>
+		</section>
+
+		<!-- STATUS COMMENTS -->
+		<section class="
+					status-comment
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+			<div class="container container-xs">
+				<article class="flex flex-column flex-v-center">
+					<header>
+						<h2>KOMENTARJI</h2>
+					</header>
+					<p class="status-highlight">
+						V sklopu popravila so bili vnešeni sledeči komentarji:
+					</p>
+
+					<!-- 
+						COMMENT CARD
+					
+						HOW TO USE:
+
+						<div class="status-comment-card flex">
+							<img src="images/Quote.jpg" alt="Comment" />
+							<div class="text-time">
+								<p class="status-comment-text">
+									[text]
+								</p>
+								<p class="status-comment-time">[date]</p>
+							</div>
+						</div>
+					-->
+					<div class="status-comments">
+						<div class="status-comment-card flex">
+							<img src="images/Quote.jpg" alt="Comment" />
+							<div class="text-time">
+								<p class="status-comment-text">
+									Žal trenutno nimamo na zalogi zadnjega stekla v vijolični
+									barvi, lahko ga namestimo v črni, beli, rdeči, rumeni ter
+									zeleni. Če ima stranka željo po vijoličnem zadnjem steklu,
+									je potrebno počakati približno 2 tedna na material.
+								</p>
+								<p class="status-comment-time">29.3.2021</p>
+							</div>
+						</div>
+						<div class="status-comment-card flex">
+							<img src="images/Quote.jpg" alt="Comment" />
+							<div class="text-time">
+								<p class="status-comment-text">
+									Strošek popravila znaša 79€ z DDV, prosimo javite.
+								</p>
+								<p class="status-comment-time">19.3.2021</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<!-- SCRIPTS FOR SCROLLS -->
+	<script src="js/status-scroll.js"></script>
+
+	<!-- FOOTER -->
+	<footer>
+		<section class="footer-sosmed footer-content flex flex-center">
+			<div class="footer-sosmed-container container">
+				<div class="footer-logos-group flex flex-between">
+					<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+					<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+							class="footer-sosmed-logos" /></a>
+					<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+					<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+				</div>
+			</div>
+		</section>
+		<section class="footer-nav footer-content flex flex-center">
+			<div class="footer-nav-container container">
+				<div class="footer-contact-group">
+					<ul class="flex flex-between">
+						<li><a href="#">DOMOV</a></li>
+						<li><a href="#">SERVIS</a></li>
+						<li><a href="#">KONTAKT</a></li>
+						<li><a href="#">O NAS</a></li>
+						<li><a href="#">CLANKI</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="footer-contact footer-content flex flex-center">
+			<div class="
+					footer-contact-container
+					container container-m
+					flex flex-between
+				">
+				<section class="footer-contact-left flex flex-v-center">
+					<i class="header-icons i-phone"></i>
+					<p>051 494 000 | 070 421 117</p>
+					<i class="header-icons i-location"></i>
+					<p>Ljubljana, Tržaška cesta 5</p>
+					<i class="header-icons i-mail"></i>
+					<p>info@mobistekla.si</p>
+				</section>
+				<section class="footer-contact-right flex flex-v-center">
+					<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+					<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+				</section>
+			</div>
+		</section>
+		<section class="footer-mobile flex flex-column flex-v-center">
+			<h4>Delovni cas</h4>
+			<div class="footer-mobile-opening flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</div>
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+			</div>
+
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+			</div>
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</div>
+
+			<div class="footer-mobile-socialmedia flex">
+				<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+				<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+						class="footer-sosmed-logos" /></a>
+				<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+				<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+			</div>
+		</section>
+	</footer>
+</body>
+
+</html>

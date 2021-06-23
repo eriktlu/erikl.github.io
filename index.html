@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/styles.css" />
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+
+	<!-- SCRIPT TO STOP TRANSITIONS WHILE ADJUSTING WINDOW SIZE -->
+	<script src="js/stop-transition.js"></script>
+
+	<!-- SCRIPT NOT ALLOWING TO SCROLL WHEN MENU OPENED - MOBILE ONLY -->
+	<script src="js/dropDown.js"></script>
+
+	<title>Mobistekla</title>
+</head>
+
+<body>
+	<!-- HEADER AREA - ONLY SHOWN ON DESKTOPS -->
+	<header class="main-header flex-center flex">
+		<div class="header-container container container-l flex flex-between">
+			<section class="header-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</section>
+			<section class="header-info flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</section>
+		</div>
+	</header>
+
+	<!-- NAVIGATION -->
+	<nav class="main-navigation flex flex-center flex-v-center">
+		<div class="
+					nav-container
+					container container-m
+					flex flex-between flex-v-center
+				">
+			<input type="checkbox" class="mobile-nav-toggle" id="mobile-nav-toggle" onclick="dropDown()" />
+			<label for="mobile-nav-toggle" class="mobile-nav-toggle-label flex flex-v-center">
+				<span></span>
+			</label>
+
+			<section class="navigation-logo">
+				<a href="#" class="flex flex-center"><img src="images/Mobistekla-Logo.png" alt="Mobistekla Logo" /></a>
+			</section>
+
+			<section class="navigation-menu" id="navMobMenu" aria-expanded="false">
+				<ul class="flex flex-between">
+					<li><a href="#" class="nav-menu-link">DOMOV</a></li>
+					<li>
+						<a href="#" class="nav-menu-link">SERVIS</a>
+						<!-- MEGA DROPDOWN MENU - ONLY FOR DESKTOP -->
+						<div class="menu-sub container-m">
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPhone</h3>
+								<ul>
+									<li><a href="#">iPhone 12 Pro</a></li>
+									<li><a href="#">iPhone SE 2nd</a></li>
+									<li><a href="#">iPhone 11 Pro Max</a></li>
+									<li><a href="#">iPhone 11 Pro</a></li>
+									<li><a href="#">iPhone XR</a></li>
+									<li><a href="#">iPhone XS</a></li>
+									<li><a href="#">iPhone XS Max</a></li>
+									<li><a href="#">iPhone X</a></li>
+									<li><a href="#">iPhone 12 Mini</a></li>
+									<li><a href="#">iPhone 8 Plus</a></li>
+									<li><a href="#">iPhone 8</a></li>
+									<li><a href="#">iPhone 7 Plus</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">iPad</h3>
+								<ul>
+									<li><a href="#">iPad Air 3 (2019)</a></li>
+									<li><a href="#">iPad 8th Gen 10.2 (2020)</a></li>
+									<li><a href="#">iPad Pro 11 (2018)</a></li>
+									<li><a href="#">iPad 7th Gen 10.2 (2019)</a></li>
+									<li><a href="#">iPad Pro 12.9 (2018)</a></li>
+									<li><a href="#">iPad Air 6th Gen (2018)</a></li>
+									<li><a href="#">iPad Air 5th Gen (2017)</a></li>
+									<li><a href="#">iPad Mini 4</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+
+								<h3 class="menu-sub-heading">MacBook</h3>
+								<ul>
+									<li><a href="#">MacBook Air 13 Inch</a></li>
+									<li><a href="#">MacBook Air 11 Inch</a></li>
+									<li><a href="#">MacBook Pro Retina</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Samsung</h3>
+								<ul>
+									<li><a href="#">Samsung Galaxy S20</a></li>
+									<li><a href="#">Samsung Galaxy S20 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S20 Ultra</a></li>
+									<li><a href="#">Samsung Galaxy S10</a></li>
+									<li><a href="#">Samsung Galaxy S10 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S10 5G</a></li>
+									<li><a href="#">Samsung Galaxy S9 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S9</a></li>
+									<li><a href="#">Samsung Galaxy S8</a></li>
+									<li><a href="#">Samsung Galaxy S8 Plus</a></li>
+									<li><a href="#">Samsung Galaxy S7</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+
+							<article class="menu-sub-column">
+								<h3 class="menu-sub-heading">Huawei</h3>
+								<ul>
+									<li><a href="#">Huawei Mate 20 Pro</a></li>
+									<li><a href="#">Huawei Mate 20 Lite</a></li>
+									<li><a href="#">Huawei Mate 20 X</a></li>
+									<li><a href="#">Huawei Mate 30</a></li>
+									<li><a href="#">Huawei Mate 30 Pro</a></li>
+									<li><a href="#">Huawei Mate 30E Pro</a></li>
+									<li><a href="#">Huawei Mate 30 RS</a></li>
+									<li><a href="#">Huawei MatePad Pro</a></li>
+									<li><a href="#">Huawei Mate Xs</a></li>
+									<li><a href="#">Huawei Mate 40</a></li>
+									<li><a href="#">Huawei Mate 40 Pro</a></li>
+									<li><a href="#">Huawei Mate 40 Pro+</a></li>
+									<li><a href="#">Huawei Mate 40 RS</a></li>
+									<li>
+										<a href="#" class="menu-sub-readmore">Poglej vse</a>
+									</li>
+								</ul>
+							</article>
+						</div>
+					</li>
+					<li><a href="#" class="nav-menu-link">KONTAKT</a></li>
+					<li><a href="#" class="nav-menu-link">O NAS</a></li>
+					<li><a href="#" class="nav-menu-link">ZANIMIVO</a></li>
+					<li><a href="#" class="nav-menu-link">GALERIJA POPRAVIL</a></li>
+				</ul>
+
+				<!-- HAMBURGER MENU - ONLY FOR MOBILE -->
+				<article class="menu-mobile flex flex-column flex-v-center" id="menMob">
+					<h5>Delovni cas</h5>
+					<div class="menu-mobile-opening flex">
+						<p>
+							<span class="header-info-opening">PON - ČET</span> 9.00-18.00
+						</p>
+						<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+						<p>051 494 000 | 070 421 117</p>
+					</div>
+
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/maps-and-flags.svg" alt="Company phone number"
+							class="header-icons i-location" />
+						<p>Ljubljana, Tržaška cesta 5</p>
+					</div>
+					<div class="menu-mobile-info flex flex-v-center">
+						<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+						<p>info@mobistekla.si</p>
+					</div>
+
+					<div class="menu-mobile-socialmedia flex">
+						<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+						<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+								class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+						<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+					</div>
+				</article>
+
+			</section>
+
+			<!-- SEARCH BUTTON - MOBILE ONLY -->
+			<section class="mobile-search-button">
+				<input type="checkbox" class="mobile-search-toggle" id="mobile-search-toggle"/>
+				<label for="mobile-search-toggle" class="mobile-search-toggle-label flex flex-v-center">
+					<img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image" />
+				</label>
+				<div class="mobile-search-group flex">
+					<label for="mobile-search-toggle" class="mobile-search-toggle-label-close flex flex-center flex-v-center">
+						<img src="icons/close.svg" alt="Close Search" class="mobile-search-close">
+					</label>
+					<form action="/" class="mobile-search-form flex flex-center flex-v-center">
+						<div class="mobile-search-field flex flex-center">
+							<input type="search" name="mobile-search" id="mobile-search" placeholder="Iskanje">
+							<span class="mobile-search-submit-group flex"><button type="submit" class="mobile-search-submit"><img src="icons/loupe.svg" alt="Search" class="mobile-search-button-image-small" /></button></span>
+						</div>
+					</form>
+				</div>
+
+				
+			</section>
+		</div>
+	</nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="index">
+
+        <!-- BANNER -->
+        <section class="index-banner main-content flex">
+
+            <div class="index-slideshow-container">
+
+                <!-- 
+                    
+                    SLIDE
+                
+                     <div class="index-slide fade flex flex-column flex-v-center">
+                        <img src="[source]" alt="[description]" class="index-slide-img">
+                        <div class="index-banner-container container container-s flex flex-v-center flex-column">
+                            <h1>[heading]</h1>
+                            <form action="[formAction]" class="banner-search-container container flex flex-around">
+                                <input type="text" placeholder="Vpišite model svojega telefona..."
+                                    class="banner-search input-outline" name="search" />
+                                <button type="submit" class="banner-button">
+                                    <img src="icons/loupe.svg" alt="Search" class="search-icon" />
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                
+                -->
+                <div class="index-slide fade flex flex-column flex-v-center">
+                    <img src="images/index-gadgets.jpg" alt="test" class="index-slide-img">
+                    <div class="index-banner-container container container-s flex flex-v-center flex-column">
+                        <h1>ZASCITNA STEKLA ZA VSE ZNAMKE TELEFONOV</h1>
+                        <form action="/" class="banner-search-container container flex flex-around">
+                            <input type="text" placeholder="Vpišite model svojega telefona..."
+                                class="banner-search input-outline" name="search" />
+                            <button type="submit" class="banner-button">
+                                <img src="icons/loupe.svg" alt="Search" class="search-icon" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="index-slide fade flex flex-column flex-v-center">
+                    <img src="images/index-gadgets.jpg" alt="test" class="index-slide-img">
+                    <div class="index-banner-container container container-s flex flex-v-center flex-column">
+                        <h1>TEST</h1>
+                        <form action="/" class="banner-search-container container flex flex-around">
+                            <input type="text" placeholder="Vpišite model svojega telefona..."
+                                class="banner-search input-outline" name="search" />
+                            <button type="submit" class="banner-button">
+                                <img src="icons/loupe.svg" alt="Search" class="search-icon" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="index-slide fade flex flex-column flex-v-center">
+                    <img src="images/index-gadgets.jpg" alt="test" class="index-slide-img">
+                    <div class="index-banner-container container container-s flex flex-v-center flex-column">
+                        <h1>Test 2</h1>
+                        <form action="/" class="banner-search-container container flex flex-around">
+                            <input type="text" placeholder="Vpišite model svojega telefona..."
+                                class="banner-search input-outline" name="search" />
+                            <button type="submit" class="banner-button">
+                                <img src="icons/loupe.svg" alt="Search" class="search-icon" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="
+						index-banner-container
+						container container-s
+						flex flex-v-center flex-column
+					">
+                <h1>ZASCITNA STEKLA ZA VSE ZNAMKE TELEFONOV</h1>
+                <form action="/" class="banner-search-container container flex flex-around">
+                    <input type="text" placeholder="Vpišite model svojega telefona..."
+                        class="banner-search input-outline" name="search" />
+                    <button type="submit" class="banner-button">
+                        <img src="icons/loupe.svg" alt="Search" class="search-icon" />
+                    </button>
+                </form>
+            </div> -->
+        </section>
+
+        <!-- SERVICES -->
+        <section class="
+					services
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+            <div class="
+						services-container
+						container container-xs
+						flex flex-column flex-v-center
+					">
+                <h2>KAJ <strong>POPRAVLJAMO?</strong></h2>
+                <div class="services-selection flex flex-between">
+                    <a class="services-card flex flex-column flex-center flex-v-center" href="#">
+                        <div class="services-card-icon">
+                            <img src="icons/repair.svg" alt="Phone repair" class="services-icons" />
+                        </div>
+                        <div class="services-card-text">
+                            <p>Popravilo telefonov</p>
+                        </div>
+                        <!-- <i class="services-icons i-phone-repair"></i>
+							<p>Popravilo telefonov</p> -->
+                    </a>
+                    <a class="services-card flex flex-column flex-center flex-v-center" href="#">
+                        <div class="services-card-icon">
+                            <img src="icons/tab.svg" alt="Tablet repair" class="services-icons" />
+                        </div>
+                        <div class="services-card-text">
+                            <p>
+                                Popravilo tabličnih <br />
+                                računalnikov
+                            </p>
+                        </div>
+                    </a>
+                    <a class="services-card flex flex-column flex-center flex-v-center" href="#">
+                        <div class="services-card-icon">
+                            <img src="icons/electric_scooter.svg" alt="Electric Scooter repair"
+                                class="services-icons" />
+                        </div>
+                        <div class="services-card-text">
+                            <p>Popravilo skirojev</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGOS -->
+        <section class="
+					index-logos
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+            <div class="
+						index-logos-container
+						container container-l
+						flex flex-column flex-v-center
+					">
+                <h2><strong>IZBERITE ZNAMKO</strong> VAŠE NAPRAVE</h2>
+
+                <!-- 
+                    SCROLLABLE LOGOS (SCRIPT IN THE END OF MAIN) 
+                    HOW TO USE: 
+
+                    Inside <ul id="iBrandBar"> add:
+
+                    <li class="index-brand-card">
+                        <a href="[linkToPage]"><img src="[linkToImage]" alt="[imageDescription]" class="index-brand-logo" /></a>
+                    </li> 
+                
+                    Everything inside [] needs to be replaced with a data from your end
+                    Minimum 8 brands due to responsive breakpoints (I can change if needed)
+                -->
+                <div class="index-scrollable-brands flex">
+                    <a href="#" class="toggleLeft"><i class="
+									brand-arrow
+									arrow-left arrow-left
+									scroll-arrow
+									text-light
+								"></i></a>
+                    <div id="iBrandOuter">
+                        <ul id="iBrandBar">
+                            <li class="index-brand-card">
+                                <a href="#"><img src="images/cat.png" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="images/samsung.png" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="images/huawei.png" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="images/apple.png" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="images/cat.png" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="images/samsung.png" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="images/huawei.png" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="images/apple.png" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                            <li class="index-brand-card">
+                                <a href="#"><img src="icons/stopwatch.svg" alt="Brand" class="index-brand-logo" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="toggleRight"><i class="brand-arrow arrow-right scroll-arrow"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHONE STATUS -->
+        <section class="
+					index-phone-status
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+            <div class="
+						index-phone-status-container
+						container container-s
+						flex flex-column flex-v-center
+					">
+                <h2>IMATE NAPRAVO NA SERVISU?</h2>
+                <p>
+                    STANJE VAŠE NAPRAVE LAHKO <br />
+                    PREVERITE NA SPODNJI POVEZAVI
+                </p>
+                <a href="#" class="index-phone-status-button">PREVERI</a>
+            </div>
+        </section>
+
+        <!-- ADVANTAGES -->
+        <section class="
+					index-advantages
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+            <div class="
+						index-advantages-container
+						container container-m
+						flex flex-column flex-v-center
+					">
+                <h2>NAŠE <strong>PREDNOSTI</strong></h2>
+
+                <!-- 
+                    ADVANTAGES - ON MOBILE SCROLLABLE 
+                    
+                    HOW TO ADD:
+                    
+                    Inside <div class="index-advantages-articles-group flex flex-wrap flex-between" id="advantages-article-group"> add:
+
+                    <a href="[linkToArticlePage]" class="index-advantages-article">
+                        <img src="[linkToImage]" alt="[imageDescription]" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>[header]</h4>
+                            <p>
+                               [text]
+                            </p>
+                        </section>
+                    </a>
+
+                    Everything inside [] needs to be replaced with a data from your end
+                -->
+
+                <div class="index-advantages-articles-group flex flex-wrap flex-between" id="advantages-article-group">
+                    <a href="#" class="index-advantages-article" id="advantages-article">
+                        <img src="icons/stopwatch.svg" alt="Stopwatch" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>
+                                POPRAVILO VAŠE NAPRAVE <br />
+                                ŽE V NEKAJ URAH
+                            </h4>
+                            <p>
+                                Skoraj vse rezerne dele imamo na zalogi, zato vam lahko nudimo
+                                izjemno hitro popravilo vašega telefona.
+                            </p>
+                        </section>
+                    </a>
+
+                    <a href="#" class="index-advantages-article">
+                        <img src="icons/broken-smartphone.svg" alt="Broken Smartphone" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>
+                                BREZPLAČNI NADOMESTNI <br />
+                                TELEFON
+                            </h4>
+                            <p>
+                                Da ostanete dosegljivi in povezani, prejmete nadomestni
+                                telefon v času popravila.
+                            </p>
+                        </section>
+                    </a>
+
+                    <a href="#" class="index-advantages-article">
+                        <img src="icons/folder.svg" alt="Folder" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>OHRANITEV PODATKOV</h4>
+                            <p>
+                                Podatke na vaši napravi ne brišemo, zato vas ne rabi skrbeti
+                                izguba le teh. Kljub temu pa priporočamo, da imate varnostno
+                                kopijo.
+                            </p>
+                        </section>
+                    </a>
+
+                    <a href="#" class="index-advantages-article">
+                        <img src="icons/box.svg" alt="Box" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>SERVIS PREKO POŠTE</h4>
+                            <p>
+                                Se je vaša naprava pokvarila, najbližji servis pa je predaleč?
+                                Servis mobilnih telefonov nudimo tudi preko pošte, kar vam bo
+                                prihranilo nekaj časa.
+                            </p>
+                        </section>
+                    </a>
+
+                    <a href="#" class="index-advantages-article">
+                        <img src="icons/file.svg" alt="File" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>GARANCIJA NA POPRAVILO</h4>
+                            <p>
+                                Ker delo opravimo strokovno profesionalno in uporabljamo
+                                kakovostne rezervne dele, garantiramo popolno funkcionalnost
+                                naprave po popravilu.
+                            </p>
+                        </section>
+                    </a>
+
+                    <a href="#" class="index-advantages-article">
+                        <img src="icons/smile.svg" alt="Smile" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>ZADOVOLJNE STRANKE</h4>
+                            <p>
+                                Strmimo k zadovoljstvu naših strank, zato vam poskušamo
+                                ponuditi najbolj kvaliteten servis po najnižji ceni ter
+                                poskrbeti, da bo vasa naprava v najkrašem možnem času
+                                popravljena.
+                            </p>
+                        </section>
+                    </a>
+
+                    <a href="#" class="index-advantages-article">
+                        <img src="icons/search.svg" alt="Search" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>SLEDENJE POPRAVILU</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipi scing elit.
+                                Pellentesque suscipit tortor pur us, at accumsan elit pharetra
+                                quis. Nam nisl quam, ullamcorper eteli sed, lobortis pulvinar
+                                lacus.
+                            </p>
+                        </section>
+                    </a>
+
+                    <a href="#" class="index-advantages-article">
+                        <img src="icons/scooter.svg" alt="Scooter" class="i-advantages-icon" />
+                        <section class="i-advantages-section">
+                            <h4>KURIRSKA SLUŽBA</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipi scing elit.
+                                Pellentesque suscipit tortor pur us, at accumsan elit pharetra
+                                quis. Nam nisl quam, ullamcorper eteli sed, lobortis pulvinar
+                                lacus.
+                            </p>
+                        </section>
+                    </a>
+
+                </div>
+
+                <div class="index-advantages-mobile-scroll flex flex-center">
+                    <a href="#" class="toggleLeft-advantages"><i class="
+									advantages-arrow
+									arrow-left arrow-left
+									scroll-arrow
+									text-light
+								" id="advantages-arrow-left"></i></a>
+                    <a href="#" class="toggleRight-advantages">
+                        <i class="advantages-arrow arrow-right scroll-arrow" id="advantages-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODCEDURES -->
+        <section class="
+					index-procedure
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+            <div class="
+						index-procedure-container
+						container container-m
+						flex flex-column flex-v-center
+					">
+                <h2><strong>POTEK SERVISA</strong> VAŠE NAPRAVE</h2>
+
+                <!-- DESKTOP VERSION -->
+                <div class="procedure-group">
+                    <section class="procedure-group-up flex flex-between">
+                        <article>
+                            <h4 class="lightest">ODLOŽITE NAPRAVO</h4>
+                            <p>
+                                Svojo napravo lahko osebno prinesete v našo poslovalnico,
+                                lahko pa jo tudi pošljete preko pošte ali pa jo na vašem
+                                naslovu prevzame kurirska služba.
+                            </p>
+                        </article>
+                        <article>
+                            <h4 class="medium">PREGLED / DIAGNOSTIKA</h4>
+                            <p>
+                                Na vaši napravi opravimo pregled in diagnostiko ter vam javimo
+                                točne stroške popravila, v primeru, da le-ti odstopajo od
+                                predvidenih stroškov.
+                            </p>
+                        </article>
+                        <article>
+                            <h4 class="darkest">PREVZEM</h4>
+                            <p>
+                                Ko je popravilo zaključeno in naprava pripravljena na prevzem,
+                                vas o tem obvestimo preko maila in telefonskega klica.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="procedure-group-infograph flex flex-center">
+                        <img src="icons/5_steps_infographics.svg" alt="5 step infograph" />
+                    </section>
+                    <section class="procedure-group-down flex flex-center">
+                        <article>
+                            <h4 class="lighter">KONTAKTNI PODATKI</h4>
+                            <p>
+                                Ob oddaji naprave nam posredujete vaše kontaktne podatke ter
+                                morebitno kodo za odklep zaslona, vi pa dobite prevzemni list,
+                                na katerem so navedeni podatki, po potrebi pa vam nudimo tudi
+                                nadomestni telefon za čas popravila.
+                            </p>
+                        </article>
+                        <article>
+                            <h4 class="darker">STANJE POPRAVILA</h4>
+                            <p>
+                                S številko naročila ter geslom, navedenim na prevzemnem listu,
+                                lahko spremljate status popravila vaše naprave. Kliknete na
+                                povezavo »Stanje popravila vaše naprave«
+                            </p>
+                        </article>
+                    </section>
+                </div>
+
+                <!-- MOBILE VERSION 
+
+                Since this one is probably not coming from the database I did not make it so you can automatically add new ones so there would not be an extra script
+                -->
+                <div class="procedure-group-mobile">
+                    <input type="checkbox" class="mobile-procedure-toggle-1 mobile-procedure-toggle"
+                        id="mobile-procedure-toggle-1" />
+                    <label for="mobile-procedure-toggle-1" class="mobile-procedure flex flex-evenly">
+                        <img src="icons/01-index.svg" alt="First procedure" />
+                        <header>
+                            <h4>ODLOŽITE NAPRAVO</h4>
+                        </header>
+                    </label>
+                    <div class="mobile-procedure-hidden-1 mobile-procedure-hidden">
+                        <label for="mobile-procedure-toggle-1" class="mobile-procedure-toggle-inside"><img src="icons/exit-index.svg" alt="Exit Procedure"></label>
+                        <div class="mobile-procedure-text">
+                            <p>
+                                Svojo napravo lahko osebno prinesete v našo poslovalnico,
+                                lahko pa jo tudi pošljete preko pošte ali pa jo na vašem
+                                naslovu prevzame kurirska služba.
+                            </p>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" class="mobile-procedure-toggle-2 mobile-procedure-toggle"
+                        id="mobile-procedure-toggle-2" />
+                    <label for="mobile-procedure-toggle-2" class="mobile-procedure flex flex-evenly">
+                        <img src="icons/02-index.svg" alt="Second Procedure" />
+                        <header>
+                            <h4>ODLOŽITE NAPRAVO</h4>
+                        </header>
+                    </label>
+                    <div class="mobile-procedure-hidden-2 mobile-procedure-hidden">
+                        <label for="mobile-procedure-toggle-2" class="mobile-procedure-toggle-inside"><img src="icons/exit-index.svg" alt="Exit Procedure"></label>
+                        <div class="mobile-procedure-text">
+                            <p>
+                                Svojo napravo lahko osebno prinesete v našo poslovalnico,
+                                lahko pa jo tudi pošljete preko pošte ali pa jo na vašem
+                                naslovu prevzame kurirska služba.
+                            </p>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" class="mobile-procedure-toggle-3 mobile-procedure-toggle"
+                        id="mobile-procedure-toggle-3" />
+                    <label for="mobile-procedure-toggle-3" class="mobile-procedure flex flex-evenly">
+                        <img src="icons/03-index.svg" alt="Third Procedure" />
+                        <header>
+                            <h4>ODLOŽITE NAPRAVO</h4>
+                        </header>
+                    </label>
+                    <div class="mobile-procedure-hidden-3 mobile-procedure-hidden">
+                        <label for="mobile-procedure-toggle-3" class="mobile-procedure-toggle-inside"><img src="icons/exit-index.svg" alt="Exit Procedure"></label>
+                        <div class="mobile-procedure-text">
+                            <p>
+                                Svojo napravo lahko osebno prinesete v našo poslovalnico,
+                                lahko pa jo tudi pošljete preko pošte ali pa jo na vašem
+                                naslovu prevzame kurirska služba.
+                            </p>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" class="mobile-procedure-toggle-4 mobile-procedure-toggle"
+                        id="mobile-procedure-toggle-4" />
+                    <label for="mobile-procedure-toggle-4" class="mobile-procedure flex flex-evenly">
+                        <img src="icons/04-index.svg" alt="Fourth Procedure" />
+                        <header>
+                            <h4>ODLOŽITE NAPRAVO</h4>
+                        </header>
+                    </label>
+                    <div class="mobile-procedure-hidden-4 mobile-procedure-hidden">
+                        <label for="mobile-procedure-toggle-4" class="mobile-procedure-toggle-inside"><img src="icons/exit-index.svg" alt="Exit Procedure"></label>
+                        <div class="mobile-procedure-text">
+                            <p>
+                                Svojo napravo lahko osebno prinesete v našo poslovalnico,
+                                lahko pa jo tudi pošljete preko pošte ali pa jo na vašem
+                                naslovu prevzame kurirska služba.
+                            </p>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" class="mobile-procedure-toggle-5 mobile-procedure-toggle"
+                        id="mobile-procedure-toggle-5" />
+                    <label for="mobile-procedure-toggle-5" class="mobile-procedure flex flex-evenly">
+                        <img src="icons/05-index.svg" alt="Fifth Procedure" />
+                        <header>
+                            <h4>ODLOŽITE NAPRAVO</h4>
+                        </header>
+                    </label>
+                    <div class="mobile-procedure-hidden-5 mobile-procedure-hidden">
+                        <label for="mobile-procedure-toggle-5" class="mobile-procedure-toggle-inside"><img src="icons/exit-index.svg" alt="Exit Procedure"></label>
+                        <div class="mobile-procedure-text">
+                            <p>
+                                Svojo napravo lahko osebno prinesete v našo poslovalnico,
+                                lahko pa jo tudi pošljete preko pošte ali pa jo na vašem
+                                naslovu prevzame kurirska služba.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT DESKTOP -->
+        <section class="
+					index-contact
+					main-content
+                    flex-v-center
+					section-freespace-top section-freespace-bottom
+				">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.217052387111!2d14.491486315400898!3d46.04676870240242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d5d13cc925d%3A0xcaac2d2e0052fe6e!2sMobistekla.si!5e0!3m2!1sen!2sid!4v1623244052868!5m2!1sen!2sid"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="
+						index-contact-container
+                        container container-m
+						flex flex-v-start flex-column
+					">
+                <article class="index-contact-card flex flex-column flex-center">
+                    <h4><strong>VPRASAJTE</strong> NAS</h4>
+                    <form action="/" class="index-contact-form flex flex-column">
+                        <input type="text" name="name" id="index-contact-name" placeholder="Ime"
+                            class="input-outline" required/>
+                        <input type="email" name="email" id="index-contact-email" placeholder="e-mail"
+                            class="input-outline" required/>
+                        <input type="text" name="question" id="index-contact-question" placeholder="vaše vprašanje"
+                            class="input-outline" required/>
+                        <input type="submit" name="submit" id="index-contact-submit" value="POŠLJI" required    />
+                    </form>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT MOBILE -->
+        <section class="
+					index-contact-mobile
+					main-content
+					section-freespace-top section-freespace-bottom
+					flex-column flex-v-center
+				">
+            <div class="form-container container-s">
+                <article class="index-contact-card flex flex-column flex-center">
+                    <h4><strong>VPRASAJTE</strong> NAS</h4>
+                    <form action="#" class="index-contact-form flex flex-column">
+                        <input type="text" name="name" id="index-contact-name" placeholder="Ime"
+                            class="input-outline" required/>
+                        <input type="email" name="email" id="index-contact-email" placeholder="e-mail"
+                            class="input-outline" required/>
+                        <input type="text" name="question" id="index-contact-question" placeholder="vaše vprašanje"
+                            class="input-outline" required/>
+                        <input type="submit" name="submit" id="index-contact-submit" value="POŠLJI" required/>
+                    </form>
+                </article>
+            </div>
+            <div class="map-mobile">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.217052387111!2d14.491486315400898!3d46.04676870240242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d5d13cc925d%3A0xcaac2d2e0052fe6e!2sMobistekla.si!5e0!3m2!1sen!2sid!4v1623244052868!5m2!1sen!2sid"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+        </section>
+
+        <!-- REVIEWS SCROLL -->
+        <section class="
+					index-reviews
+					main-content
+					section-freespace-top section-freespace-bottom
+				">
+            <div class="
+						index-reviews-container
+						container container-l
+						flex flex-column flex-v-center
+					">
+                <h2><strong>MNENJA</strong> STRANK</h2>
+
+                <!-- 
+                    SCROLLABLE REVIEWS
+
+                    HOW TO USE:
+
+                    Inside <div class="index-review-group flex" id="iReviewBar"> add:
+
+                    <article class="index-review-card">
+                        <img src="[imageSource]" alt="[imageDescription]" class="i-review-quote" />
+                        <p class="i-review-text">
+                            [text]
+                        </p>
+                        <p class="i-review-name">[revierName]</p>
+                    </article>
+
+                    Everything inside [] needs to be replaced with a data from your end
+                    Minimum 3 brands due to responsive breakpoints
+                
+                -->
+                <div class="index-review-scroll flex">
+                    <a href="#" class="toggleLeft-reviews flex flex-v-center"><i class="
+									reviews-arrow
+									arrow-left-reviews arrow-left
+									scroll-arrow
+									text-light
+								"></i></a>
+                    <div class="index-review-outer-group" id="iReviewOuter">
+                        <div class="index-review-group flex" id="iReviewBar">
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Matej</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Luka</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Janez</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Janez</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Matej</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Luka</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Janez</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Janez</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Matej</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Luka</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Janez</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Janez</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Matej</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Luka</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Janez</p>
+                            </article>
+                            <article class="index-review-card">
+                                <img src="images/Quote.jpg" alt="quotes" class="i-review-quote" />
+                                <p class="i-review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad min im veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea com consequat.
+                                </p>
+                                <p class="i-review-name">Janez</p>
+                            </article>
+                        </div>
+                    </div>
+                    <a href="#" class="toggleRight-reviews flex flex-v-center"><i
+                            class="reviews-arrow arrow-right-reviews scroll-arrow"></i></a>
+                </div>
+                <a href="#" class="index-reviews-link">VEC MNENJ</a>
+            </div>
+        </section>
+    </main>
+
+<script>var docWidth = document.documentElement.offsetWidth;
+
+    [].forEach.call(
+      document.querySelectorAll('*'),
+      function(el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      }
+    );</script>
+
+    <!-- SLIDESHOW SCRIPT -->
+    <script src="js/slideshow.js"></script>
+
+    <!-- SCRIPTS FOR THE SCROLLS -->
+    <script src="js/brand-icons-scroll.js"></script>
+    <script src="js/reviews-scroll.js"></script>
+    <script src="js/advantages-scroll.js"></script>
+
+	<!-- FOOTER -->
+	<footer>
+		<section class="footer-sosmed footer-content flex flex-center">
+			<div class="footer-sosmed-container container">
+				<div class="footer-logos-group flex flex-between">
+					<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+					<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+							class="footer-sosmed-logos" /></a>
+					<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+					<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+				</div>
+			</div>
+		</section>
+		<section class="footer-nav footer-content flex flex-center">
+			<div class="footer-nav-container container">
+				<div class="footer-contact-group">
+					<ul class="flex flex-between">
+						<li><a href="#">DOMOV</a></li>
+						<li><a href="#">SERVIS</a></li>
+						<li><a href="#">KONTAKT</a></li>
+						<li><a href="#">O NAS</a></li>
+						<li><a href="#">CLANKI</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="footer-contact footer-content flex flex-center">
+			<div class="
+					footer-contact-container
+					container container-m
+					flex flex-between
+				">
+				<section class="footer-contact-left flex flex-v-center">
+					<i class="header-icons i-phone"></i>
+					<p>051 494 000 | 070 421 117</p>
+					<i class="header-icons i-location"></i>
+					<p>Ljubljana, Tržaška cesta 5</p>
+					<i class="header-icons i-mail"></i>
+					<p>info@mobistekla.si</p>
+				</section>
+				<section class="footer-contact-right flex flex-v-center">
+					<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+					<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+				</section>
+			</div>
+		</section>
+		<section class="footer-mobile flex flex-column flex-v-center">
+			<h4>Delovni cas</h4>
+			<div class="footer-mobile-opening flex">
+				<p><span class="header-info-opening">PON - ČET</span> 9.00-18.00</p>
+				<p><span class="header-info-opening">PET</span> 9.00-16.00</p>
+			</div>
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/call.svg" alt="Company phone number" class="header-icons i-phone" />
+				<p>051 494 000 | 070 421 117</p>
+			</div>
+
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/maps-and-flags.svg" alt="Company phone number" class="header-icons i-location" />
+				<p>Ljubljana, Tržaška cesta 5</p>
+			</div>
+			<div class="footer-mobile-info flex flex-v-center">
+				<img src="icons/mail.svg" alt="Company phone number" class="header-icons i-mail" />
+				<p>info@mobistekla.si</p>
+			</div>
+
+			<div class="footer-mobile-socialmedia flex">
+				<a href="#"><img src="icons/001-facebook.svg" alt="Facebook" class="footer-sosmed-logos" /></a>
+				<a href="#" class="footer-sosmed-logos"><img src="icons/011-instagram.svg" alt="Instagram"
+						class="footer-sosmed-logos" /></a>
+				<a href="#"><img src="icons/008-youtube.svg" alt="YouTube" class="footer-sosmed-logos" /></a>
+				<a href="#"><img src="icons/010-linkedin.svg" alt="LinkedIn" class="footer-sosmed-logos" /></a>
+			</div>
+		</section>
+	</footer>
+</body>
+
+</html>
