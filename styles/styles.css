@@ -863,13 +863,18 @@ INDEX CONTACT
   padding: 20px;
   box-shadow: 0px 1px 10px var(--box-shadow-primary);
   text-align: center;
-  width: 250px;
+  width: 300px;
   border-radius: 2%;
-  height: 240px;
+  height: 300px;
+}
+
+#index-contact-question {
+  margin-bottom: 30px;
 }
 
 .index-contact-card h4 {
   margin-top: 0;
+  font-size: 1.2rem;
 }
 
 .index-contact-form input {
@@ -2470,6 +2475,7 @@ MAP - CONTACT
 
       .mobile-nav-toggle {
         display: none;
+        position: relative;
       }
 
       .mobile-nav-toggle:checked ~ .navigation-menu {
@@ -2510,7 +2516,7 @@ MAP - CONTACT
       }
 
       .mobile-nav-toggle-label span::after {
-        top: 39px;
+        top: 38px;
       }
 
       .navigation-menu {
