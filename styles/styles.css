@@ -556,10 +556,6 @@ SERVICES
   color: var(--primary-color);
 }
 
-.service-brands .banner-button {
-  width: 80px !important;
-}
-
 .services-selection {
   width: 100%;
 }
