@@ -22,3 +22,15 @@ function dropDown() {
         document.body.style.overflow = 'hidden'
     }
 }
+
+const resizer = () => {
+    document.getElementById("navMobMenu").style.height = window.innerHeight - 60 + "px";
+}
+
+window.addEventListener("resize", (e) => {
+    resizer();
+});
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    resizer();
+});
