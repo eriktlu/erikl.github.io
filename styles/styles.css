@@ -2460,6 +2460,7 @@ MAP - CONTACT
 
       .navigation-logo img {
         width: 60%;
+        height: 100%;
       }
 
       .dropdown-button {
