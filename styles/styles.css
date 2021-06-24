@@ -2690,6 +2690,7 @@ MAP - CONTACT
       flex-direction: row;
       justify-content: space-around;
       text-align: left !important;
+      margin-bottom: 20px;
     }
 
     .services-icons {
@@ -2720,7 +2721,7 @@ MAP - CONTACT
     }
 
     .index-brand-logo {
-      width: 25%;
+      width: 50%;
     }
 
     .brand-arrow {
@@ -2848,6 +2849,7 @@ MAP - CONTACT
 
       .procedure-group-mobile {
         display: block !important;
+        width: 100%;
       }
 
       .mobile-procedure-toggle {
@@ -2869,12 +2871,17 @@ MAP - CONTACT
         display: none;
       }
 
+      .mobile-procedure {
+        align-items: center;
+      }
+
       .mobile-procedure img {
-        width: 10%;
+        height: 100%;
+        width: 50px;
       }
 
       .mobile-procedure h4 {
-        font-size: 1.4rem !important;
+        font-size: 1.2rem !important;
         font-weight: 600;
       }
 
@@ -2903,7 +2910,7 @@ MAP - CONTACT
 
       .form-container {
         width: 90%;
-        margin-bottom: 25px;
+        margin-bottom: 45px;
       }
 
       .index-contact-card {
