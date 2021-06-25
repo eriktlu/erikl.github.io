@@ -479,7 +479,8 @@ FOOTER CONTACT
   margin-left: 10px;
 }
 
-.footer-contact-left a {
+.footer-contact-left a,
+.footer-mobile-info a {
   text-decoration: none;
   color: var(--font-color-light);
 }
