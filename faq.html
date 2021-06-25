@@ -273,8 +273,8 @@
 					HOW TO ADD:
 
 					<div class="question-category-group">
-						<input type="checkbox" class="question-category-toggle" id="uniqueID" />
-						<label for="uniqueID" class="question-category flex flex-v-center flex-between">
+						<input type="checkbox" class="question-category-toggle" id="[uniqueID]" onclick="setHeight(this)"/>
+						<label for="[uniqueID]" class="question-category flex flex-v-center flex-between">
 							<header>
 								<h4>[theme]</h4>
 							</header>
@@ -296,7 +296,7 @@
 
 				-->
 				<div class="question-category-group">
-					<input type="checkbox" class="question-category-toggle" id="question-category-toggle" />
+					<input type="checkbox" class="question-category-toggle" id="question-category-toggle" onclick="setHeight(this)"/>
 					<label for="question-category-toggle" class="question-category flex flex-v-center flex-between">
 						<header>
 							<h4>ODLOŽITE NAPRAVO</h4>
@@ -406,7 +406,7 @@
 				</div>
 
 				<div class="question-category-group">
-					<input type="checkbox" class="question-category-toggle" id="question-category-toggle-2" />
+					<input type="checkbox" class="question-category-toggle" id="question-category-toggle-2" onclick="setHeight(this)"/>
 					<label for="question-category-toggle-2" class="question-category flex flex-v-center flex-between">
 						<header>
 							<h4>ODLOŽITE NAPRAVO</h4>
@@ -516,7 +516,7 @@
 				</div>
 
 				<div class="question-category-group">
-					<input type="checkbox" class="question-category-toggle" id="question-category-toggle-3" />
+					<input type="checkbox" class="question-category-toggle" id="question-category-toggle-3" onclick="setHeight(this)"/>
 					<label for="question-category-toggle-3" class="question-category flex flex-v-center flex-between">
 						<header>
 							<h4>ODLOŽITE NAPRAVO</h4>
@@ -626,7 +626,7 @@
 				</div>
 
 				<div class="question-category-group">
-					<input type="checkbox" class="question-category-toggle" id="question-category-toggle-4" />
+					<input type="checkbox" class="question-category-toggle" id="question-category-toggle-4" onclick="setHeight(this)"/>
 					<label for="question-category-toggle-4" class="question-category flex flex-v-center flex-between">
 						<header>
 							<h4>ODLOŽITE NAPRAVO</h4>
@@ -736,7 +736,7 @@
 				</div>
 
 				<div class="question-category-group">
-					<input type="checkbox" class="question-category-toggle" id="question-category-toggle-5" />
+					<input type="checkbox" class="question-category-toggle" id="question-category-toggle-5" onclick="setHeight(this)"/>
 					<label for="question-category-toggle-5" class="question-category flex flex-v-center flex-between">
 						<header>
 							<h4>ODLOŽITE NAPRAVO</h4>
@@ -846,6 +846,8 @@
 				</div>
 			</div>
 		</section>
+
+		<script src="js/faq-setHeight.js"></script>
 
 	</main>
 
