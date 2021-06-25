@@ -23,14 +23,17 @@ function dropDown() {
     }
 }
 
-const resizer = () => {
-    document.getElementById("navMobMenu").style.height = window.innerHeight - 60 + "px";
+if(screen.width < 899){
+    const resizer = () => {
+        document.getElementById("navMobMenu").style.height = window.innerHeight - 60 + "px";
+    }
+    
+    window.addEventListener("resize", (e) => {
+        resizer();
+    });
+    
+    document.addEventListener("DOMContentLoaded", function(event) {
+        resizer();
+    });
 }
 
-window.addEventListener("resize", (e) => {
-    resizer();
-});
-
-document.addEventListener("DOMContentLoaded", function(event) {
-    resizer();
-});
